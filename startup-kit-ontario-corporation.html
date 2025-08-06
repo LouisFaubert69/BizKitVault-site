@@ -3,49 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ontario Corporation Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <title>Ontario Corporation Startup Kit</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
   <style>
-    /* Same CSS as above */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f6f9fc;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    section {
+      padding: 2rem;
+    }
+    .kit-features {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #004aad;
+    }
+    .testimonial {
+      background: #fff;
+      padding: 1rem;
+      border-left: 4px solid #004aad;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004aad;
+      color: white;
+      margin-top: 2rem;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta button {
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+    .cta button:hover {
+      background: #003080;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Ontario Corporation Kit</h1>
-    <p>Launch your corporation with all required docs and setup guidance.</p>
+    <h1>Ontario Corporation Startup Kit</h1>
   </header>
 
   <section>
     <div class="kit-features">
       <div class="card">
-        <h3>🧾 Articles of Incorporation</h3>
-        <p>Template and walkthrough for completing official forms.</p>
+        <h3>Federal or Provincial Incorporation?</h3>
+        <p>Understand the difference and how to apply.</p>
       </div>
       <div class="card">
-        <h3>🏛️ Minute Book & Resolutions</h3>
-        <p>Organizational resolutions and corporate record keeping.</p>
+        <h3>Articles of Incorporation</h3>
+        <p>Sample templates and editable documents included.</p>
       </div>
       <div class="card">
-        <h3>📈 CRA & Tax Setup</h3>
-        <p>Details for federal/provincial numbers, GST/HST, payroll, and more.</p>
+        <h3>Corporate Minute Book</h3>
+        <p>Start your records the right way.</p>
       </div>
+    </div>
+
+    <div class="testimonial">
+      <strong>J. Singh:</strong> “This kit saved me hours and hundreds of dollars when registering my consulting company.”
     </div>
 
     <div class="cta">
-      <p><strong>Price:</strong> $39 CAD</p>
+      <p><strong>Price:</strong> $49.95 CAD</p>
       <button>Add to Cart</button>
     </div>
-
-    <h2>Customer Reviews</h2>
-    <div class="testimonial">“Professional-grade resources at a fraction of the price.” – Daniel T.</div>
-    <div class="testimonial">“Great for first-time incorporation!” – Melissa W.</div>
   </section>
 
   <footer>
-    &copy; 2025 BizKit Vault. All rights reserved.
+    &copy; 2025 BizKitVault.ca – All rights reserved.
   </footer>
 
+  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
