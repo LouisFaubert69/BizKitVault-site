@@ -3,45 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ontario Startup Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <title>Ontario Startup Kit - BizKit Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Urbanist', sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-      color: #1a1a1a;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #003366;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #003366;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    a.button:hover {
-      background-color: #0055aa;
+      font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
-<body>
-  <h1>Ontario Startup Kit</h1>
-  <p>This kit contains everything you need to launch your business in Ontario.</p>
-  <a class="button" href="#">Download Ontario Kit</a>
+<body class="bg-gradient-to-br from-white to-blue-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-6 shadow-lg">
+    <div class="text-center text-3xl font-bold">Ontario Startup Kit</div>
+    <p class="text-center text-sm mt-1">Start your business the Ontario way 🇨🇦</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-10 px-4" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4">Everything you need to start a business in Ontario</h2>
+    <p class="mb-6 text-gray-600 max-w-xl mx-auto">This kit includes all the legal forms, registration links, and guidance specific to Ontario regulations. Whether you're opening a coffee shop in Toronto or launching a tech startup in Ottawa — this is your launchpad.</p>
+    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-800 transition">Download Now</a>
+  </section>
+
+  <!-- Icons Section -->
+  <section class="py-12 bg-white" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/contract.png" class="mx-auto mb-4" />
+        <h3 class="font-bold text-lg">Registration Forms</h3>
+        <p class="text-sm text-gray-600">All legal forms you need to get started in Ontario.</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/bank-building.png" class="mx-auto mb-4" />
+        <h3 class="font-bold text-lg">Local Resources</h3>
+        <p class="text-sm text-gray-600">Links to government portals, tax info, and more.</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/checked--v1.png" class="mx-auto mb-4" />
+        <h3 class="font-bold text-lg">Step-by-Step Checklist</h3>
+        <p class="text-sm text-gray-600">A guided startup process to keep you on track.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-blue-50 py-10" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-6">What Entrepreneurs Are Saying</h3>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="bg-white shadow-md p-4 rounded-xl">
+          <p class="italic">“I was totally lost before finding this kit. It helped me register and structure my consulting biz in days!”</p>
+          <div class="mt-2 font-bold">— Sarah D., Mississauga</div>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-xl">
+          <p class="italic">“Ontario has so many rules. This kit saved me hours of searching — worth every penny.”</p>
+          <div class="mt-2 font-bold">— Jamal A., Ottawa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
+    More provinces coming soon — Quebec & Alberta kits in development! 🇨🇦
+  </footer>
 
   <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
