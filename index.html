@@ -4,17 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BizKit Vault</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .card a:hover {
+      background: #2980b9;
+    }
+
+    @media (min-width: 768px) {
+      .cards {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to BizKit Vault</h1>
-  <p>Select a product below:</p>
-  <ul>
-    <li><a href="startup-kits.html">Startup Kits by Province</a></li>
-    <li><a href="small-business-compliance.html">Small Business Compliance Kits</a></li>
-    <li><a href="micro-courses.html">Micro Courses</a></li>
-  </ul>
+  <header>
+    <h1>BizKit Vault</h1>
+    <p>Your one-stop shop for digital startup & compliance kits</p>
+  </header>
+
+  <section class="hero">
+    <h2>Choose Your Kit</h2>
+  </section>
+
+  <section class="cards">
+ <div class="card">
+      <h3>Small Business Compliance Kit</h3>
+      <p>Essential legal, HR, and safety documents for Ontario businesses.</p>
+      <a href="compliance-kit.html">View Kit</a>
+    </div>
+
+    <div class="card">
+      <h3>Startup Kit by Province</h3>
+      <p>Business registration, tax setup, and provincial forms – organized by region.</p>
+      <a href="startup-kit.html">View Kit</a>
+    </div>
+
+    <div class="card">
+      <h3>Micro-Courses & Mini-Trainings</h3>
+      <p>Quick, actionable learning modules for new entrepreneurs.</p>
+      <a href="micro-courses.html">View Kit</a>
+    </div>
+  </section>  
+ <footer>
+    <p>&copy; 2025 BizKitVault.ca – All rights reserved.</p>
+  </footer>
 
   <!-- Tidio Chatbot Script -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+
 </body>
-</html>
+</html> 
