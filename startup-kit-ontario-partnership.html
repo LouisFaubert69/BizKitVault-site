@@ -4,81 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ontario Partnership Startup Kit</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f6f9fc;
+      background: #f5faff;
       color: #333;
     }
+
     header {
-      background: #004aad;
+      background-color: #004aad;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
+      animation: fadeInDown 1s ease-in-out;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
-      animation: fadeIn 1s ease-in-out;
+      font-size: 2.2rem;
     }
-    section {
-      padding: 2rem;
+
+    .container {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .kit-features {
-      display: grid;
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #004aad;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
       gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-content: center;
     }
+
     .card {
       background: white;
-      border-radius: 16px;
       padding: 1.5rem;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      width: 300px;
       transition: transform 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
     }
+
     .card h3 {
       margin-top: 0;
       color: #004aad;
     }
+
     .testimonial {
-      background: #fff;
-      padding: 1rem;
+      background: #ffffff;
       border-left: 4px solid #004aad;
-      margin: 1rem 0;
-      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      margin: 2rem auto;
+      max-width: 700px;
+      font-style: italic;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #004aad;
-      color: white;
-      margin-top: 2rem;
-    }
+
     .cta {
       text-align: center;
       margin-top: 2rem;
     }
+
+    .cta p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
     .cta button {
-      background: #004aad;
+      background-color: #004aad;
       color: white;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
       border: none;
-      padding: 1rem 2rem;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
     }
+
     .cta button:hover {
-      background: #003080;
+      background-color: #003080;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -87,37 +124,38 @@
     <h1>Ontario Partnership Startup Kit</h1>
   </header>
 
-  <section>
-    <div class="kit-features">
+  <div class="container">
+    <div class="section-title">What’s Inside Your Kit?</div>
+    <div class="features">
       <div class="card">
         <h3>Step-by-Step Guide</h3>
-        <p>Easy instructions for registering a partnership in Ontario.</p>
+        <p>Instructions to register a partnership in Ontario easily.</p>
       </div>
       <div class="card">
-        <h3>Partnership Agreement Template</h3>
-        <p>Editable legal template included.</p>
+        <h3>Legal Templates</h3>
+        <p>Editable partnership agreement and key forms included.</p>
       </div>
       <div class="card">
-        <h3>Business Name Registration</h3>
-        <p>How to register a business name online or in-person.</p>
+        <h3>Name Registration</h3>
+        <p>Guide for registering your business name in-person or online.</p>
       </div>
     </div>
 
     <div class="testimonial">
-      <strong>Laura & Kevin:</strong> “We launched our co-owned bakery with this kit — super helpful!”
+      “We used the Partnership kit to open our family café. It made the process simple and stress-free!” — Sarah & Mike
     </div>
 
     <div class="cta">
-      <p><strong>Price:</strong> $34.95 CAD</p>
+      <p>Only $34.95 CAD</p>
       <button>Add to Cart</button>
     </div>
-  </section>
+  </div>
 
   <footer>
     &copy; 2025 BizKitVault.ca – All rights reserved.
   </footer>
 
-  <!-- Tidio Chatbot -->
+  <!-- Tidio Chat -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
