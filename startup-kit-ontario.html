@@ -1,81 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ontario Startup Kit - BizKit Vault</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ontario Startup Kit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .kit-options {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-bottom: 3rem;
+    }
+    .kit {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .kit:hover {
+      transform: translateY(-5px);
+    }
+    .kit i {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+    .kit h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .kit p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .kit a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #003366;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .testimonials {
+      background: #e9f2fb;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 3rem;
+    }
+    .testimonial {
+      margin-bottom: 1.5rem;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-white to-blue-50 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-blue-700 text-white py-6 shadow-lg">
-    <div class="text-center text-3xl font-bold">Ontario Startup Kit</div>
-    <p class="text-center text-sm mt-1">Start your business the Ontario way 🇨🇦</p>
+<body>
+  <header>
+    <h1>Ontario Startup Kits</h1>
+    <p>Choose your business structure to get started</p>
   </header>
-
-  <!-- Hero Section -->
-  <section class="text-center py-10 px-4" data-aos="fade-up">
-    <h2 class="text-2xl font-bold mb-4">Everything you need to start a business in Ontario</h2>
-    <p class="mb-6 text-gray-600 max-w-xl mx-auto">This kit includes all the legal forms, registration links, and guidance specific to Ontario regulations. Whether you're opening a coffee shop in Toronto or launching a tech startup in Ottawa — this is your launchpad.</p>
-    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-800 transition">Download Now</a>
-  </section>
-
-  <!-- Icons Section -->
-  <section class="py-12 bg-white" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-      <div>
-        <img src="https://img.icons8.com/color/96/000000/contract.png" class="mx-auto mb-4" />
-        <h3 class="font-bold text-lg">Registration Forms</h3>
-        <p class="text-sm text-gray-600">All legal forms you need to get started in Ontario.</p>
+  <div class="container">
+    <section class="kit-options">
+      <div class="kit">
+        <i class="fas fa-user"></i>
+        <h2>Sole Proprietorship</h2>
+        <p>Everything you need to start your business as a sole proprietor in Ontario.</p>
+        <a href="startup-kit-ontario-sole.html">View Kit</a>
       </div>
-      <div>
-        <img src="https://img.icons8.com/color/96/000000/bank-building.png" class="mx-auto mb-4" />
-        <h3 class="font-bold text-lg">Local Resources</h3>
-        <p class="text-sm text-gray-600">Links to government portals, tax info, and more.</p>
+      <div class="kit">
+        <i class="fas fa-handshake"></i>
+        <h2>Partnership</h2>
+        <p>Legal docs, templates, and tools tailored for business partnerships in Ontario.</p>
+        <a href="startup-kit-ontario-partnership.html">View Kit</a>
       </div>
-      <div>
-        <img src="https://img.icons8.com/color/96/000000/checked--v1.png" class="mx-auto mb-4" />
-        <h3 class="font-bold text-lg">Step-by-Step Checklist</h3>
-        <p class="text-sm text-gray-600">A guided startup process to keep you on track.</p>
+      <div class="kit">
+        <i class="fas fa-building"></i>
+        <h2>Corporation</h2>
+        <p>Incorporation forms, business plans, and growth strategies for corporations.</p>
+        <a href="startup-kit-ontario-corporation.html">View Kit</a>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="bg-blue-50 py-10" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-bold mb-6">What Entrepreneurs Are Saying</h3>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <div class="bg-white shadow-md p-4 rounded-xl">
-          <p class="italic">“I was totally lost before finding this kit. It helped me register and structure my consulting biz in days!”</p>
-          <div class="mt-2 font-bold">— Sarah D., Mississauga</div>
-        </div>
-        <div class="bg-white shadow-md p-4 rounded-xl">
-          <p class="italic">“Ontario has so many rules. This kit saved me hours of searching — worth every penny.”</p>
-          <div class="mt-2 font-bold">— Jamal A., Ottawa</div>
-        </div>
+    </section>
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <p>“I had no idea where to begin—this kit saved me hours and gave me confidence.”</p>
+        <strong>— Melissa T., Toronto</strong>
       </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
-    More provinces coming soon — Quebec & Alberta kits in development! 🇨🇦
+      <div class="testimonial">
+        <p>“Clean layout, super helpful documents. I launched my sole prop in under a week!”</p>
+        <strong>— Samir K., Ottawa</strong>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 BizKitVault.ca — Ontario Startup Kits
   </footer>
-
-  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
