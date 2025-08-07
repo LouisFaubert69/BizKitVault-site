@@ -1,134 +1,170 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ontario Startup Kit</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ontario Startup Kits</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f8f9fa;
+      padding: 0;
+      background-color: #f4fdf7;
       color: #333;
     }
+
     header {
-      background: #003366;
-      padding: 1rem;
+      background-color: #28a745;
       color: white;
       text-align: center;
+      padding: 2rem 1rem;
     }
-    h1 {
+
+    header h1 {
       margin: 0;
       font-size: 2rem;
     }
-    .container {
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .kit-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
       padding: 2rem;
       max-width: 1200px;
       margin: auto;
     }
-    .kit-options {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      margin-bottom: 3rem;
-    }
-    .kit {
-      background: white;
-      padding: 1.5rem;
+
+    .kit-box {
+      background-color: #d9f7e1;
       border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 2rem 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .kit:hover {
+
+    .kit-box:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
-    .kit i {
-      font-size: 2rem;
-      color: #003366;
+
+    .kit-box i {
+      font-size: 3rem;
+      color: #28a745;
       margin-bottom: 1rem;
     }
-    .kit h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
+
+    .kit-box h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
     }
-    .kit p {
+
+    .kit-box p {
       font-size: 0.95rem;
+      color: #555;
+    }
+
+    .kit-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #28a745;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .kit-box a:hover {
+      background-color: #218838;
+    }
+
+    .testimonials {
+      background-color: #eafaf0;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 1.8rem;
       margin-bottom: 1rem;
     }
-    .kit a {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background: #003366;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    .testimonials {
-      background: #e9f2fb;
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 3rem;
-    }
+
     .testimonial {
-      margin-bottom: 1.5rem;
-    }
-    .testimonial p {
+      max-width: 800px;
+      margin: auto;
       font-style: italic;
+      color: #444;
     }
-    .testimonial strong {
-      display: block;
-      margin-top: 0.5rem;
-    }
+
     footer {
-      background: #003366;
-      color: white;
+      background-color: #c1eed2;
+      color: #222;
       text-align: center;
       padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .kit-box i {
+        font-size: 2.5rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Ontario Startup Kits</h1>
-    <p>Choose your business structure to get started</p>
+    <p>Select your preferred business structure to get started.</p>
   </header>
-  <div class="container">
-    <section class="kit-options">
-      <div class="kit">
-        <i class="fas fa-user"></i>
-        <h2>Sole Proprietorship</h2>
-        <p>Everything you need to start your business as a sole proprietor in Ontario.</p>
-        <a href="startup-kit-ontario-sole.html">View Kit</a>
-      </div>
-      <div class="kit">
-        <i class="fas fa-handshake"></i>
-        <h2>Partnership</h2>
-        <p>Legal docs, templates, and tools tailored for business partnerships in Ontario.</p>
-        <a href="startup-kit-ontario-partnership.html">View Kit</a>
-      </div>
-      <div class="kit">
-        <i class="fas fa-building"></i>
-        <h2>Corporation</h2>
-        <p>Incorporation forms, business plans, and growth strategies for corporations.</p>
-        <a href="startup-kit-ontario-corporation.html">View Kit</a>
-      </div>
-    </section>
-    <section class="testimonials">
-      <h2>What Our Users Say</h2>
-      <div class="testimonial">
-        <p>“I had no idea where to begin—this kit saved me hours and gave me confidence.”</p>
-        <strong>— Melissa T., Toronto</strong>
-      </div>
-      <div class="testimonial">
-        <p>“Clean layout, super helpful documents. I launched my sole prop in under a week!”</p>
-        <strong>— Samir K., Ottawa</strong>
-      </div>
-    </section>
-  </div>
+
+  <section class="kit-options">
+    <div class="kit-box">
+      <i class="fas fa-user-tie"></i>
+      <h3>Sole Proprietorship</h3>
+      <p>Perfect for solo entrepreneurs starting out in Ontario.</p>
+      <a href="startup-kit-ontario-sole.html">Explore Kit</a>
+    </div>
+
+    <div class="kit-box">
+      <i class="fas fa-handshake"></i>
+      <h3>Partnership</h3>
+      <p>For teams of two or more looking to co-own a business.</p>
+      <a href="startup-kit-ontario-partnership.html">Explore Kit</a>
+    </div>
+
+    <div class="kit-box">
+      <i class="fas fa-building"></i>
+      <h3>Corporation</h3>
+      <p>Ideal for those ready to incorporate and grow formally.</p>
+      <a href="startup-kit-ontario-corporation.html">Explore Kit</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Users Say</h2>
+    <div class="testimonial">
+      “The Ontario startup kit made everything so simple. I launched my business in a weekend!”
+    </div>
+  </section>
+
   <footer>
-    &copy; 2025 BizKitVault.ca — Ontario Startup Kits
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
+
+  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+
 </body>
 </html>
