@@ -3,167 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ontario Sole Proprietorship Startup Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Ontario Sole Proprietorship Kit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* light blue background */
+    }
+
+    header {
+      background-color: #003366; /* deep blue */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .back-button {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .back-button a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back-button a:hover {
+      text-decoration: underline;
+    }
+
+    .kit-info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 40px 20px;
+    }
+
+    .kit-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .kit-box img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .kit-box h2 {
+      margin-top: 15px;
+      color: #003366;
+    }
+
+    .kit-box p {
+      font-size: 16px;
       color: #333;
     }
-    header {
-      background-color: #007BFF;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .return-button {
-      margin: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      color: #007BFF;
-    }
-    .box-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .info-box {
-      background: white;
-      border: 2px solid #007BFF;
-      border-radius: 10px;
-      width: 280px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .info-box:hover {
-      transform: translateY(-5px);
-    }
-    .info-box img {
-      width: 60px;
-      height: 60px;
-    }
-    .info-box h3 {
-      margin-top: 15px;
-      color: #007BFF;
-    }
+
     .price-section {
-      background-color: #e6f0ff;
-      padding: 30px 20px;
+      background-color: #e6f2ff;
+      padding: 40px 20px;
       text-align: center;
     }
+
     .price-section h2 {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    .price {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0;
       color: #007BFF;
     }
-    .price-tag {
-      font-size: 2em;
-      color: #007BFF;
-      margin: 10px 0;
-    }
-    .download-info {
+
+    .price-section p {
+      font-size: 18px;
       margin-top: 10px;
-      font-style: italic;
+      color: #333;
     }
-    .testimonials {
-      background-color: #f9f9f9;
+
+    .buy-button {
+      background-color: #28a745;
+      color: white;
+      font-size: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .testimonial-section {
       padding: 40px 20px;
+      background-color: #fdfdfd;
+      text-align: center;
     }
+
+    .testimonial-section h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
     .testimonial {
-      margin-bottom: 20px;
+      max-width: 700px;
+      margin: 20px auto;
       font-style: italic;
+      color: #333;
     }
-    .testimonial strong {
-      display: block;
-      margin-top: 5px;
-      color: #007BFF;
-    }
+
     footer {
-      background-color: #007BFF;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 15px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Ontario Sole Proprietorship Startup Kit</h1>
-    <p>Everything you need to legally start and grow your business in Ontario</p>
+    <h1>Ontario Sole Proprietorship Kit</h1>
   </header>
 
-  <div style="text-align: center;">
-    <a href="startup-kit-ontario.html" class="return-button">← Return to Ontario Startup Kit</a>
+  <div class="back-button">
+    <a href="startup-kit-ontario.html">&larr; Back to Ontario Startup Kits</a>
   </div>
 
-  <section class="section">
-    <h2>What's Inside the Kit</h2>
-    <div class="box-container">
-      <div class="info-box">
-        <img src="assets/icons/business-registration.png" alt="Business Registration Icon">
-        <h3>Business Registration</h3>
-        <p>Step-by-step guide and form links to register your sole proprietorship in Ontario.</p>
-      </div>
-      <div class="info-box">
-        <img src="assets/icons/tax-setup.png" alt="Tax Setup Icon">
-        <h3>Tax Setup</h3>
-        <p>Includes HST registration guidance, CRA setup, and common tax obligations.</p>
-      </div>
-      <div class="info-box">
-        <img src="assets/icons/licensing.png" alt="Licensing Icon">
-        <h3>Licensing Info</h3>
-        <p>Info on municipal and provincial licenses you may need depending on your business type.</p>
-      </div>
-      <div class="info-box">
-        <img src="assets/icons/business-plan.png" alt="Business Plan Icon">
-        <h3>Business Plan Template</h3>
-        <p>Easy-to-fill template to help you plan, fund, and structure your business for success.</p>
-      </div>
-      <div class="info-box">
-        <img src="assets/icons/branding.png" alt="Branding Icon">
-        <h3>Branding Tools</h3>
-        <p>Business name guide, logo resources, and templates to establish your visual identity.</p>
-      </div>
-      <div class="info-box">
-        <img src="assets/icons/contracts.png" alt="Contracts Icon">
-        <h3>Client Contract Samples</h3>
-        <p>Editable templates for service agreements, NDAs, and more tailored for Ontario.</p>
-      </div>
+  <section class="kit-info">
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Registration Guide Icon">
+      <h2>Registration Guide</h2>
+      <p>Step-by-step instructions on how to register your sole proprietorship in Ontario.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Legal Templates Icon">
+      <h2>Legal Templates</h2>
+      <p>Ready-to-use templates including service agreements, NDAs, and more.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Checklist Icon">
+      <h2>Compliance Checklist</h2>
+      <p>Ensure you're meeting all federal and provincial requirements for your business.</p>
     </div>
   </section>
 
   <section class="price-section">
-    <h2>Kit Price</h2>
-    <div class="price-tag">$49 CAD</div>
-    <div class="download-info">Download available immediately after payment confirmation.</div>
+    <h2>Get the Full Kit Now</h2>
+    <div class="price">$49 CAD</div>
+    <p>Instant access to download will be granted after purchase.</p>
+    <button class="buy-button">Buy Now</button>
   </section>
 
-  <section class="testimonials">
-    <h2>What Our Users Say</h2>
-    <div class="testimonial">“I had no clue where to begin, but this kit made it easy. The registration part was gold.”<br><strong>– Sarah M., Toronto</strong></div>
-    <div class="testimonial">“Everything I needed in one place. Highly recommend for first-time business owners.”<br><strong>– Jason P., Ottawa</strong></div>
-    <div class="testimonial">“Worth every penny. I saved hours of research and got my business up and running fast.”<br><strong>– Aisha K., Hamilton</strong></div>
+  <section class="testimonial-section">
+    <h2>What Users Are Saying</h2>
+    <div class="testimonial">“Super useful and easy to follow. I registered my sole proprietorship in just a day!” — Jessica M., Toronto</div>
+    <div class="testimonial">“The templates saved me hours of work and the compliance checklist kept me on track.” — Ahmed K., Ottawa</div>
+    <div class="testimonial">“Exactly what I needed to get started. Highly recommend for new entrepreneurs.” — Rachel B., Mississauga</div>
   </section>
 
   <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
+  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
