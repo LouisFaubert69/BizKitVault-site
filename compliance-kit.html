@@ -4,134 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Small Business Compliance Kit</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f9fc;
-      color: #333;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
     }
     header {
-      background: #005a9c;
+      background-color: #1e3a8a;
       color: white;
-      padding: 1rem;
+      padding: 20px;
       text-align: center;
       position: relative;
     }
-    .back-btn {
+    .back-button {
       position: absolute;
-      left: 1rem;
-      top: 1rem;
-      background: white;
-      color: #005a9c;
+      left: 20px;
+      top: 20px;
+      background-color: #3b82f6;
+      color: white;
+      padding: 8px 14px;
       border: none;
-      padding: 5px 10px;
+      border-radius: 6px;
       font-size: 14px;
       cursor: pointer;
-      border-radius: 4px;
     }
     .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      text-align: center;
     }
-    .grid {
+    .feature-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+      gap: 20px;
     }
-    .card {
-      background: white;
+    .feature-box {
+      background-color: white;
+      padding: 20px;
       border-radius: 12px;
-      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
-      transition: transform 0.3s;
+      transition: transform 0.2s;
     }
-    .card:hover {
-      transform: translateY(-5px);
+    .feature-box:hover {
+      transform: translateY(-4px);
     }
-    .card i {
-      font-size: 2.5rem;
-      color: #005a9c;
-      margin-bottom: 0.5rem;
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
     }
     .price-section {
-      background: #fff;
-      padding: 2rem;
+      background-color: #f3f4f6;
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-top: 50px;
       text-align: center;
-      margin-bottom: 2rem;
     }
-    .price-section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+    .price {
+      font-size: 32px;
+      font-weight: 700;
+      color: #16a34a;
+      margin-bottom: 15px;
     }
-    .price-section p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .price-section button {
-      background: #005a9c;
+    .add-to-cart-btn {
+      background-color: #10b981;
       color: white;
+      padding: 12px 30px;
+      font-size: 16px;
       border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
+      margin-top: 10px;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #6b7280;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background: #005a9c;
+      background-color: #1e3a8a;
       color: white;
-      font-size: 0.9rem;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 60px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <button class="back-btn" onclick="history.back()">Back</button>
+    <button class="back-button" onclick="window.location.href='index.html'">Back</button>
     <h1>Small Business Compliance Kit</h1>
   </header>
 
   <div class="container">
-    <div class="grid">
-      <div class="card">
-        <i class="fas fa-clipboard-check"></i>
+    <h2>What's Inside This National Compliance Kit</h2>
+
+    <div class="feature-grid">
+      <div class="feature-box">
+        <div class="feature-icon" style="color: #f59e0b;">
+          <i class="fas fa-clipboard-check"></i>
+        </div>
         <h3>Compliance Checklist</h3>
-        <p>Step-by-step checklist to stay legally compliant and organized as a Canadian business.</p>
+        <p>A clear checklist to guide you through every national small business requirement in Canada.</p>
       </div>
-      <div class="card">
-        <i class="fas fa-file-signature"></i>
+
+      <div class="feature-box">
+        <div class="feature-icon" style="color: #3b82f6;">
+          <i class="fas fa-file-contract"></i>
+        </div>
         <h3>Legal Templates</h3>
-        <p>Essential customizable templates for contracts, policies, and operational documents.</p>
+        <p>Downloadable contracts, NDAs, privacy policies, and more – ready for business use.</p>
       </div>
-      <div class="card">
-        <i class="fas fa-scale-balanced"></i>
+
+      <div class="feature-box">
+        <div class="feature-icon" style="color: #10b981;">
+          <i class="fas fa-scale-balanced"></i>
+        </div>
         <h3>Federal & Provincial Laws</h3>
-        <p>Summarized key regulations from both federal and provincial governments.</p>
+        <p>Includes key laws & licensing obligations applicable across all provinces and federally.</p>
       </div>
     </div>
 
     <div class="price-section">
-      <h2>$39 CAD</h2>
-      <p>Instant access to download will be granted after purchase.</p>
-      <button>Add to Cart</button>
+      <div class="price">$49 CAD</div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+      <div class="note">Instant access to download will be granted after purchase.</div>
     </div>
   </div>
 
   <footer>
-    2025 Bizkitvault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
+    2025 BizkitVault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
   </footer>
+
+  <!-- ✅ Tidio Chatbot Script -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
 </html>
