@@ -3,107 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compliance Kit - BizKitVault</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Small Business Compliance Kit - Canada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f4f7fa;
+      background-color: #f4f9ff;
       color: #333;
     }
 
     header {
-      background-color: #0057D8;
+      background-color: #0051a2;
       color: white;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
+    .container {
+      max-width: 1100px;
       margin: auto;
+      padding: 30px 20px;
     }
 
-    .highlight {
-      color: #0057D8;
-      font-weight: 600;
-    }
-
-    .features {
-      margin-top: 30px;
-      padding-left: 20px;
-    }
-
-    .features li {
+    .section-title {
+      text-align: center;
+      font-size: 2em;
       margin-bottom: 10px;
     }
 
-    .cta-button {
-      display: inline-block;
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
       margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #FF5722;
-      color: white;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
     }
 
-    .cta-button:hover {
-      background-color: #e64a19;
+    .icon-card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .icon-card h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .price-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .price-section h2 {
+      font-size: 1.6em;
+      color: #0051a2;
+      margin-bottom: 10px;
+    }
+
+    .price-section p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 2.5em;
+      color: #00b894;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 8px;
+    }
+
+    .btn {
+      background-color: #00b894;
+      color: white;
+      padding: 12px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #019872;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #eee;
-      margin-top: 60px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .price {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Compliance Kit</h1>
-    <p>Your essential package to stay legally compliant in Canada</p>
+    <h1>Small Business Compliance Kit</h1>
+    <p>Complete Compliance Toolkit for Canadian Entrepreneurs</p>
   </header>
 
-  <section>
-    <h2>Why Do You Need This Kit?</h2>
-    <p>
-      Whether you're starting a business or managing an existing one, staying compliant with federal and provincial regulations is non-negotiable. Our <span class="highlight">Compliance Kit</span> simplifies this process for you.
-    </p>
+  <div class="container">
+    <h2 class="section-title">What's Included</h2>
 
-    <ul class="features">
-      <li>✔️ Includes up-to-date federal & provincial requirements</li>
-      <li>✔️ Printable checklists and templates</li>
-      <li>✔️ Business license & registration guides</li>
-      <li>✔️ Tax and payroll compliance steps</li>
-      <li>✔️ Includes links to government portals</li>
-    </ul>
+    <div class="icon-grid">
+      <div class="icon-card">
+        <img src="https://img.icons8.com/color/96/contract.png" alt="Documents">
+        <h3>Essential Forms</h3>
+        <p>Pre-filled compliance documents for small businesses across Canada.</p>
+      </div>
+      <div class="icon-card">
+        <img src="https://img.icons8.com/color/96/policy-document.png" alt="Policy">
+        <h3>Policy Templates</h3>
+        <p>Workplace policies to meet provincial and federal requirements.</p>
+      </div>
+      <div class="icon-card">
+        <img src="https://img.icons8.com/color/96/compliance.png" alt="Compliance">
+        <h3>Compliance Checklist</h3>
+        <p>Step-by-step national compliance guide.</p>
+      </div>
+      <div class="icon-card">
+        <img src="https://img.icons8.com/color/96/online-support.png" alt="Support">
+        <h3>Support Resources</h3>
+        <p>Useful links, phone numbers, and contacts for assistance.</p>
+      </div>
+      <div class="icon-card">
+        <img src="https://img.icons8.com/color/96/briefcase.png" alt="Briefcase">
+        <h3>Business Best Practices</h3>
+        <p>Tips to stay compliant and organized from day one.</p>
+      </div>
+    </div>
 
-    <a class="cta-button" href="#">Download Compliance Kit</a>
-  </section>
+    <div class="price-section">
+      <h2>Complete Kit Price</h2>
+      <p>One-time purchase — no subscriptions or recurring fees</p>
+      <div class="price">$39 CAD</div>
+      <p class="note">Instant access to download will be granted after purchase.</p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 BizKitVault. All rights reserved.
+    &copy; 2025 BizKitVault.ca - All rights reserved.
   </footer>
 
-  <!-- Chatbot Integration -->
+  <!-- ✅ TIDIO CHATBOT -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+
 </body>
 </html>
