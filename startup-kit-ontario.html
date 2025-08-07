@@ -3,99 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Startup Kit - Ontario</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Ontario Startup Kit - BizKitVault</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f9fdf9;
       margin: 0;
-      background-color: #f4fff4;
+      padding: 0;
       color: #333;
     }
     header {
-      background-color: #2e7d32;
-      color: white;
+      background-color: #4CAF50;
       padding: 20px;
       text-align: center;
+      color: white;
     }
     header h1 {
       margin: 0;
       font-size: 28px;
     }
+    header p {
+      margin: 5px 0 0;
+      font-style: italic;
+    }
     .back-button {
-      display: block;
-      margin: 15px;
-      text-align: left;
-    }
-    .back-button a {
+      margin: 20px;
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
       text-decoration: none;
-      color: #2e7d32;
-      font-weight: bold;
+      border-radius: 5px;
     }
-    .kit-container {
+    .kits-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 30px 10px;
+      gap: 30px;
     }
     .kit-box {
+      width: 90%;
+      max-width: 700px;
       background-color: white;
-      border: 2px solid #2e7d32;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 15px;
-      max-width: 600px;
-      width: 100%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
     .kit-box:hover {
-      transform: translateY(-5px);
-    }
-    .kit-box img {
-      width: 60px;
-      height: 60px;
+      transform: scale(1.02);
     }
     .kit-box h2 {
-      margin-top: 10px;
-      color: #2e7d32;
+      margin-top: 0;
+      color: #4CAF50;
     }
     .kit-box p {
       margin: 10px 0;
+    }
+    .kit-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
     }
     .testimonials {
       background-color: #e8f5e9;
       padding: 40px 20px;
       text-align: center;
     }
-    .testimonials h2 {
-      margin-bottom: 30px;
-      font-size: 26px;
+    .testimonials h3 {
       color: #2e7d32;
+      margin-bottom: 30px;
+      font-size: 24px;
     }
     .testimonial {
-      max-width: 700px;
-      margin: 0 auto 20px;
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .testimonial p {
       font-style: italic;
-      margin-bottom: 8px;
+      margin-bottom: 25px;
     }
-    .testimonial .name {
-      font-weight: bold;
-      color: #555;
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      color: #388e3c;
     }
     footer {
-      background-color: #d0f0d0;
-      text-align: center;
+      background-color: #c8e6c9;
       padding: 15px;
-      margin-top: 40px;
+      text-align: center;
       font-size: 14px;
-      color: #333;
+      color: #2e7d32;
     }
   </style>
 </head>
@@ -103,63 +98,57 @@
 
   <header>
     <h1>Ontario Startup Kits</h1>
+    <p>Choose the legal structure that fits your business goals</p>
   </header>
 
-  <div class="back-button">
-    <a href="startup-kit.html">&larr; Back to Province Selection</a>
-  </div>
+  <a href="startup-kit.html" class="back-button">← Back</a>
 
-  <div class="kit-container">
+  <section class="kits-container">
+
     <div class="kit-box">
-      <img src="https://img.icons8.com/color/96/briefcase.png" alt="Sole Proprietorship Icon"/>
+      <div class="kit-icon">📄</div>
       <h2>Sole Proprietorship</h2>
-      <p>Perfect for individuals launching a business on their own.</p>
-      <a href="startup-kit-ontario-sole.html">Explore Kit</a>
+      <p>Start your business as a sole owner with ease. Includes forms and steps specific to Ontario.</p>
+      <a href="startup-kit-ontario-sole.html">View Kit →</a>
     </div>
 
     <div class="kit-box">
-      <img src="https://img.icons8.com/color/96/group.png" alt="Partnership Icon"/>
+      <div class="kit-icon">🤝</div>
       <h2>Partnership</h2>
-      <p>For two or more people starting a business together in Ontario.</p>
-      <a href="startup-kit-ontario-partnership.html">Explore Kit</a>
+      <p>Launch your business with one or more partners. Includes Ontario-specific agreements and guidance.</p>
+      <a href="startup-kit-ontario-partnership.html">View Kit →</a>
     </div>
 
     <div class="kit-box">
-      <img src="https://img.icons8.com/color/96/company.png" alt="Corporation Icon"/>
+      <div class="kit-icon">🏢</div>
       <h2>Corporation</h2>
-      <p>A comprehensive kit for incorporating a business in Ontario.</p>
-      <a href="startup-kit-ontario-corporation.html">Explore Kit</a>
+      <p>Register as an Ontario corporation and access detailed federal and provincial setup resources.</p>
+      <a href="startup-kit-ontario-corporation.html">View Kit →</a>
     </div>
-  </div>
 
-  <div class="testimonials">
-    <h2>What Users Are Saying</h2>
+  </section>
 
+  <section class="testimonials">
+    <h3>What Users Are Saying</h3>
     <div class="testimonial">
-      <p>“This kit made starting my business feel effortless!”</p>
-      <div class="name">— Jessica, Toronto</div>
+      “Incredibly helpful! I had no idea where to start, and this kit made everything simple.”
+      <strong>– Jessica, Toronto</strong>
     </div>
-
     <div class="testimonial">
-      <p>“Everything was included. Extremely helpful and affordable.”</p>
-      <div class="name">— Raj, Brampton</div>
+      “Worth every dollar. Clear, clean, and gave me confidence to launch my business.”
+      <strong>– Ahmed, Ottawa</strong>
     </div>
-
     <div class="testimonial">
-      <p>“I'm impressed by how professional the documents were.”</p>
-      <div class="name">— Aiden, Ottawa</div>
+      “As a first-time entrepreneur, I needed clarity — and this kit delivered!”
+      <strong>– Priya, Mississauga</strong>
     </div>
-
-    <div class="testimonial">
-      <p>“Highly recommend for any new entrepreneur in Ontario.”</p>
-      <div class="name">— Marie, Hamilton</div>
-    </div>
-  </div>
+  </section>
 
   <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+
 </body>
 </html>
