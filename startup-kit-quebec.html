@@ -1,150 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kits de Démarrage Québec – BizKitVault.ca</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trousse de démarrage - Québec</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f4f8;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #0077cc;
+      background-color: #2b61ad;
       color: white;
-      text-align: center;
       padding: 2rem 1rem;
+      text-align: center;
     }
-    header h1 {
-      margin: 0;
+    h1 {
       font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     .container {
       padding: 2rem 1rem;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
-    .kit-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      transition: transform 0.3s ease;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
-    .kit-card:hover {
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
       transform: translateY(-5px);
     }
-    .kit-card h2 {
-      margin-top: 0;
-      color: #0077cc;
+    .card h3 {
+      margin-top: 1rem;
+      font-size: 1.25rem;
     }
-    .kit-card p {
-      margin: 0.5rem 0 1rem;
+    .card p {
+      font-size: 0.95rem;
     }
-    .kit-card a {
+    .card a {
       display: inline-block;
-      background-color: #0077cc;
-      color: white;
-      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      color: #2b61ad;
+      font-weight: 600;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
     }
-    .kit-card a:hover {
-      background-color: #005fa3;
+    .icon {
+      font-size: 3rem;
     }
-    .testimonial-section {
-      background: #ffffff;
-      padding: 2rem;
+    .testimonials {
+      margin-top: 4rem;
+      background-color: #fff;
+      padding: 3rem 1rem;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .testimonial-section h3 {
-      margin-top: 0;
-      color: #0077cc;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     }
     .testimonial {
-      border-left: 4px solid #00b894;
-      padding-left: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    .testimonial p {
       font-style: italic;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
+    .testimonial strong {
+      display: block;
+      margin-top: 0.5rem;
+      color: #2b61ad;
     }
-    #chatbot-bubble {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #0077cc;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 1000;
-      font-size: 28px;
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Kits de Démarrage – Québec</h1>
+    <h1>Démarrez votre entreprise au Québec</h1>
+    <p>Choisissez la structure qui vous convient</p>
   </header>
 
   <div class="container">
-
-    <div class="kit-card">
-      <h2>Entreprise Individuelle</h2>
-      <p>Idéal pour les entrepreneurs seuls souhaitant lancer leur activité rapidement au Québec.</p>
-      <a href="startup-kit-quebec-entreprise-individuelle.html">Voir le Kit</a>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">👤</div>
+        <h3>Entreprise Individuelle</h3>
+        <p>Simple, rapide et idéal pour les travailleurs autonomes.</p>
+        <a href="entreprise-individuelle.html">Voir la trousse →</a>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Société de Personnes</h3>
+        <p>Pour deux ou plusieurs associés souhaitant partager une entreprise.</p>
+        <a href="societe-de-personnes.html">Voir la trousse →</a>
+      </div>
+      <div class="card">
+        <div class="icon">🏢</div>
+        <h3>Société par Actions</h3>
+        <p>Structure corporative pour croissance et responsabilité limitée.</p>
+        <a href="societe-par-actions.html">Voir la trousse →</a>
+      </div>
     </div>
 
-    <div class="kit-card">
-      <h2>Société de Personnes</h2>
-      <p>Parfait pour deux partenaires ou plus qui souhaitent gérer une entreprise ensemble.</p>
-      <a href="startup-kit-quebec-societe-de-personnes.html">Voir le Kit</a>
+    <div class="testimonials">
+      <h2>Ce que disent nos utilisateurs</h2>
+      <div class="testimonial">
+        <p>"La trousse de démarrage m’a permis de lancer mon entreprise en un week-end."</p>
+        <strong>— Karine D., Montréal</strong>
+      </div>
+      <div class="testimonial">
+        <p>"J’ai adoré l’organisation et la simplicité. Tout était inclus."</p>
+        <strong>— Marc T., Québec</strong>
+      </div>
     </div>
-
-    <div class="kit-card">
-      <h2>Société par Actions</h2>
-      <p>Structure idéale pour la croissance, les protections légales, et les possibilités d’investissement.</p>
-      <a href="startup-kit-quebec-societe-par-actions.html">Voir le Kit</a>
-    </div>
-
-    <div class="testimonial-section">
-      <h3>Ce que disent nos utilisateurs</h3>
-      <div class="testimonial">“J’ai pu lancer ma société individuelle sans stress – très bien expliqué.” – Amélie G.</div>
-      <div class="testimonial">“La meilleure ressource pour les entrepreneurs québécois.” – Karim T.</div>
-    </div>
-
   </div>
 
-  <div id="chatbot-bubble" onclick="openChat()">
-    💬
-  </div>
-
-  <script>
-    function openChat() {
-      window.location.href = "https://chat.openai.com/chat";
-    }
-  </script>
-
-  <footer>
-    &copy; 2025 BizKitVault.ca – Tous droits réservés.
-  </footer>
+  <!-- ✅ Tidio chatbot bubble (same as Ontario) -->
+  <script src="//code.tidio.co/2ilbftdrqf8frz8hzrfb9ho3ypze9z7j.js" async></script>
 
 </body>
 </html>
