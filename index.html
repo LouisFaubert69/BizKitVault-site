@@ -3,140 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BizKitVault - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>BizKitVault</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
     }
+
     header {
-      background-color: #4a90e2;
+      background-color: #0077cc;
       color: white;
-      padding: 1rem 2rem;
+      padding: 20px;
       text-align: center;
+      font-size: 28px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 5px;
+      color: #e0e0e0;
     }
-    header p {
-      margin: 0.3rem 0 0;
-      font-size: 1rem;
-      font-style: italic;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .grid {
+
+    main {
+      padding: 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
+
     .box {
       background: white;
-      padding: 1.5rem;
       border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      transition: transform 0.2s ease;
     }
+
     .box:hover {
       transform: translateY(-5px);
     }
+
     .box i {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #4a90e2;
+      font-size: 36px;
+      color: #0077cc;
+      margin-bottom: 15px;
     }
+
     .box h3 {
-      margin: 0.5rem 0;
+      margin: 10px 0;
+      font-size: 20px;
     }
+
     .box p {
+      font-size: 14px;
       color: #555;
     }
-    .testimonials {
-      background: #ffffff;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #4a90e2;
-      padding-left: 1rem;
-    }
+
     footer {
-      background-color: #333;
-      color: white;
+      background-color: #222;
+      color: #fff;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 3rem;
+      padding: 15px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .comments {
+      background: #fff;
+      padding: 20px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .comment {
+      border-left: 4px solid #0077cc;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>BizKitVault</h1>
-    <p>Startup Success, One Kit at a Time.</p>
+    BizKitVault
+    <div class="tagline">Your All-in-One Small Business Startup Hub</div>
   </header>
 
-  <div class="section">
-    <div class="grid">
-      <div class="box">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Compliance Kit</h3>
-        <p>All the tools to stay legally compliant across Canada.</p>
-      </div>
+  <main>
+    <a href="compliance-kit.html" class="box">
+      <i class="fas fa-clipboard-check"></i>
+      <h3>Small Business Compliance Kit</h3>
+      <p>Stay compliant with federal & provincial laws. Includes checklists, guides, and templates.</p>
+    </a>
 
-      <div class="box">
-        <i class="fas fa-map-marked-alt"></i>
-        <h3>Startup Kit by Province</h3>
-        <p>Tailored business kits for Ontario, Quebec, and Alberta.</p>
-      </div>
+    <a href="startup-kit.html" class="box">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Startup Kit by Province</h3>
+      <p>Tailored kits by province to start your business right — Ontario, Quebec, Alberta & more.</p>
+    </a>
 
-      <div class="box">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Micro Courses</h3>
-        <p>Short and actionable training modules for entrepreneurs.</p>
-      </div>
-    </div>
+    <a href="micro-courses.html" class="box">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h3>Micro-Courses & Trainings</h3>
+      <p>Quick learning modules covering business basics, legal steps, and marketing essentials.</p>
+    </a>
+  </main>
 
-    <div class="testimonials">
-      <h2>💬 What Users Are Saying:</h2>
-
-      <div class="testimonial">
-        <p>⭐⭐⭐⭐⭐ <br>
-        “These kits made registering my small business so much easier. Thank you BizKitVault!”<br>
-        — <em>Jasmine T., Toronto, ON</em></p>
-      </div>
-
-      <div class="testimonial">
-        <p>⭐⭐⭐⭐⭐ <br>
-        “I was lost on what forms to file. The Compliance Kit saved me hours!”<br>
-        — <em>Marco D., Calgary, AB</em></p>
-      </div>
-
-      <div class="testimonial">
-        <p>⭐⭐⭐⭐⭐ <br>
-        “Fast download, clear steps, and helpful chatbot. Highly recommend!”<br>
-        — <em>Sophie L., Montreal, QC</em></p>
-      </div>
-    </div>
-  </div>
+  <section class="comments">
+    <h3>User Testimonials</h3>
+    <div class="comment">"Perfect startup help — had my business registered and compliant in two days!"</div>
+    <div class="comment">"Simple, useful, and very affordable. The compliance kit saved me hours!"</div>
+    <div class="comment">"The micro-courses were short, clear, and helpful for building confidence."</div>
+  </section>
 
   <footer>
-    &copy; 2025 BizKitVault. All rights reserved.
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
-  <!-- ✅ Tidio Chatbot -->
+  <!-- ✅ Tidio Chatbot Integration -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
