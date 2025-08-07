@@ -1,93 +1,127 @@
-<!-- File: startup-kit-quebec-entreprise-individuelle.html --><!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kit de Démarrage - Entreprise Individuelle (Québec)</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
-  <script async src="https://analytics.example.com/track.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kit de Démarrage – Entreprise Individuelle (Québec)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
     }
-    header, footer {
-      background-color: #1d3557;
+    header {
+      background-color: #004e92;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 1em;
     }
     .container {
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
-      padding: 20px;
+      padding: 30px;
     }
-    h1, h2 {
+    h2 {
+      color: #004e92;
       text-align: center;
     }
-    .kit-info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 30px;
+    .feature {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease;
     }
-    .kit-info img {
-      width: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
+    .feature:hover {
+      transform: scale(1.02);
+    }
+    .feature i {
+      font-size: 30px;
+      margin-right: 20px;
+      color: #004e92;
+    }
+    .price-section {
+      background: #ffffff;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #004e92;
+    }
+    .testimonials {
+      margin-top: 40px;
     }
     .testimonial {
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
-    .buy-button {
-      background: #457b9d;
+    footer {
+      background-color: #004e92;
       color: white;
+      text-align: center;
       padding: 15px;
-      border: none;
-      border-radius: 10px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      display: block;
-      width: 100%;
-      margin-top: 20px;
+      margin-top: 50px;
     }
-    .buy-button:hover {
-      background: #1d3557;
+    @media screen and (max-width: 600px) {
+      .feature {
+        flex-direction: column;
+        text-align: center;
+      }
+      .feature i {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kit de Démarrage pour une Entreprise Individuelle - Québec</h1>
-  </header>  <div class="container">
-    <section class="kit-info">
-      <div><img src="/assets/icon-doc.png" alt=""> Guide de création d'entreprise</div>
-      <div><img src="/assets/icon-legal.png" alt=""> Enregistrement d'entreprise (Registraire des entreprises)</div>
-      <div><img src="/assets/icon-license.png" alt=""> Licences et permis requis (locale & provinciale)</div>
-      <div><img src="/assets/icon-tax.png" alt=""> Numéro d'entreprise du Québec (NEQ)</div>
-      <div><img src="/assets/icon-contract.png" alt=""> Modèles de contrats & factures</div>
-      <div><img src="/assets/icon-support.png" alt=""> Assistance de démarrage par chatbot</div>
-    </section><button class="buy-button">Acheter maintenant - 29,99 $</button>
 
-<section>
-  <h2>Témoignages</h2>
-  <div class="testimonial">“Très utile! J'ai démarré mon entreprise en une journée.” – Jean M.</div>
-  <div class="testimonial">“Tout était clair, complet, et simple. Je recommande fortement.” – Sophie L.</div>
-</section>
+<header>
+  <h1>Kit de Démarrage – Entreprise Individuelle (Québec)</h1>
+</header>
 
-  </div>  <footer>
-    &copy; 2025 BizKitVault.ca – Tous droits réservés
-  </footer>  <!-- Tidio Chatbot -->  <script src="//code.tidio.co/your_project_code.js" async></script>  <script>
-    ScrollReveal().reveal('.kit-info div', { interval: 200, origin: 'bottom', distance: '20px' });
-    ScrollReveal().reveal('.testimonial', { interval: 300, origin: 'left', distance: '30px' });
-  </script></body>
+<div class="container">
+  <h2>Ce que vous obtenez :</h2>
+
+  <div class="feature"><i class="fas fa-file-signature"></i><div>Formulaires d’enregistrement d’entreprise individuelle</div></div>
+  <div class="feature"><i class="fas fa-id-card"></i><div>Instructions pas-à-pas pour l’immatriculation au Registraire des entreprises</div></div>
+  <div class="feature"><i class="fas fa-money-check-alt"></i><div>Informations fiscales et accès à Revenu Québec</div></div>
+  <div class="feature"><i class="fas fa-balance-scale"></i><div>Documents juridiques essentiels en français</div></div>
+  <div class="feature"><i class="fas fa-briefcase"></i><div>Liste des permis requis selon votre secteur d’activité</div></div>
+  <div class="feature"><i class="fas fa-globe"></i><div>Exigences linguistiques et outils pour conformité à la Charte de la langue française</div></div>
+  <div class="feature"><i class="fas fa-envelope-open-text"></i><div>Modèles d’avis au public et à la clientèle</div></div>
+
+  <div class="price-section">
+    <h2>Prix du kit</h2>
+    <div class="price">29.99$ CAD</div>
+    <button style="margin-top: 20px; padding: 10px 20px; font-size: 18px; background-color: #004e92; color: white; border: none; border-radius: 5px; cursor: pointer;">Ajouter au panier</button>
+  </div>
+
+  <div class="testimonials">
+    <h2>Témoignages</h2>
+    <div class="testimonial">“J’ai lancé mon entreprise individuelle en 2 jours grâce à ce kit. Tout est clair et simple.” – <strong>Julie M.</strong></div>
+    <div class="testimonial">“Enfin un guide québécois pratique et abordable!” – <strong>Antoine L.</strong></div>
+  </div>
+</div>
+
+<!-- Chatbot (Tidio) -->
+<script src="//code.tidio.co/YOUR-PUBLIC-ID.js" async></script>
+
+<footer>
+  &copy; 2025 BizKitVault.ca – Tous droits réservés
+</footer>
+
+</body>
 </html>
