@@ -2,119 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BizKit Vault</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BizKitVault.ca – Digital Business Kits</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"/>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4f8;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f7fc;
       color: #333;
     }
 
     header {
-      background: #2c3e50;
+      background-color: #1e3a8a;
       color: white;
-      padding: 1.5rem;
+      padding: 2rem;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
-    .hero {
-      text-align: center;
-      padding: 2rem 1rem;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .cards {
+    .section {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      align-items: center;
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1100px;
+      margin-top: 2rem;
     }
 
     .card {
       background: white;
-      padding: 1.5rem;
       border-radius: 1rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      text-align: center;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.2s ease;
+      text-align: center;
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: translateY(-5px);
     }
 
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background: #3498db;
+    .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      margin: 0.5rem 0;
+      color: #1e3a8a;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #1e3a8a;
       color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    a {
       text-decoration: none;
-      border-radius: 8px;
+      color: inherit;
     }
 
-    .card a:hover {
-      background: #2980b9;
-    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
 
-    @media (min-width: 768px) {
-      .cards {
-        flex-direction: row;
-        justify-content: center;
+      .card-container {
+        padding: 0 1rem;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>BizKit Vault</h1>
-    <p>Your one-stop shop for digital startup & compliance kits</p>
+    <h1>Welcome to BizKitVault.ca</h1>
+    <p>Your all-in-one digital vending machine for Canadian business essentials</p>
   </header>
 
-  <section class="hero">
-    <h2>Choose Your Kit</h2>
+  <section class="section">
+    <div class="card-container">
+
+      <a href="compliance-kit.html">
+        <div class="card">
+          <img src="https://img.icons8.com/color/96/clipboard--v1.png" alt="Compliance Icon"/>
+          <h2>Compliance Kit</h2>
+          <p>Ensure your business meets federal and provincial regulations.</p>
+        </div>
+      </a>
+
+      <a href="startup-kit.html">
+        <div class="card">
+          <img src="https://img.icons8.com/color/96/startup--v1.png" alt="Startup Kit Icon"/>
+          <h2>Startup Kit by Province</h2>
+          <p>Get province-specific startup kits tailored to your legal structure.</p>
+        </div>
+      </a>
+
+      <a href="micro-courses.html">
+        <div class="card">
+          <img src="https://img.icons8.com/color/96/classroom.png" alt="Micro Courses Icon"/>
+          <h2>Micro Courses</h2>
+          <p>Quick, focused business training to grow your skills and confidence.</p>
+        </div>
+      </a>
+
+    </div>
   </section>
 
-  <section class="cards">
- <div class="card">
-      <h3>Small Business Compliance Kit</h3>
-      <p>Essential legal, HR, and safety documents for Ontario businesses.</p>
-      <a href="compliance-kit.html">View Kit</a>
-    </div>
-
-    <div class="card">
-      <h3>Startup Kit by Province</h3>
-      <p>Business registration, tax setup, and provincial forms – organized by region.</p>
-      <a href="startup-kit.html">View Kit</a>
-    </div>
-
-    <div class="card">
-      <h3>Micro-Courses & Mini-Trainings</h3>
-      <p>Quick, actionable learning modules for new entrepreneurs.</p>
-      <a href="micro-courses.html">View Kit</a>
-    </div>
-  </section>  
- <footer>
-    <p>&copy; 2025 BizKitVault.ca – All rights reserved.</p>
+  <footer>
+    2025 BizKitVault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
   </footer>
 
-  <!-- Tidio Chatbot Script -->
+  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
-
 </body>
-</html> 
+</html>
