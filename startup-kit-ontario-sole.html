@@ -4,140 +4,145 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ontario Sole Proprietorship Startup Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f9fc;
-      color: #333;
+      background-color: #f0f8ff;
     }
-
     header {
-      background-color: #4CAF50;
+      background-color: #1e90ff;
+      color: white;
       padding: 20px;
       text-align: center;
-      color: white;
     }
-
+    .container {
+      padding: 30px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
     .back-button {
-      margin: 20px;
-    }
-
-    .back-button a {
-      text-decoration: none;
-      background-color: #4CAF50;
+      display: inline-block;
+      margin-bottom: 20px;
+      background-color: #1e90ff;
       color: white;
       padding: 10px 15px;
+      text-decoration: none;
       border-radius: 5px;
     }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    h1 {
+    .section-title {
       text-align: center;
-      color: #2E7D32;
+      color: #1e90ff;
+      font-size: 28px;
+      margin-bottom: 25px;
     }
-
-    .description {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 30px;
+    .info-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
-
-    .pricing {
-      background-color: #e0f2f1;
+    .box {
+      background-color: white;
+      border-radius: 12px;
       padding: 20px;
-      border-left: 5px solid #388E3C;
-      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
-
-    .pricing h2 {
-      margin-top: 0;
+    .box img {
+      width: 60px;
+      height: 60px;
     }
-
-    .pricing p {
-      font-weight: bold;
-      font-size: 1.3em;
+    .box-content {
+      flex: 1;
     }
-
-    .access-note {
-      margin-top: 10px;
-      font-style: italic;
-      color: #388E3C;
-    }
-
-    .testimonials {
+    .price-section {
+      margin-top: 40px;
+      text-align: center;
       background-color: #ffffff;
-      border: 1px solid #ddd;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .price-section h2 {
+      color: #1e90ff;
+      font-size: 28px;
+    }
+    .price-section p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .buy-btn {
+      background-color: #1e90ff;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      text-decoration: none;
       border-radius: 8px;
+      display: inline-block;
+      margin-top: 15px;
     }
-
-    .testimonials h3 {
-      margin-top: 0;
-      text-align: center;
-      color: #4CAF50;
-    }
-
-    .testimonial {
-      margin-bottom: 20px;
-      border-left: 4px solid #4CAF50;
-      padding-left: 15px;
-      font-style: italic;
-    }
-
     footer {
-      background-color: #e8f5e9;
+      background-color: #1e90ff;
+      color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
-      color: #333;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Tidio Chatbot -->
-  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
-
   <header>
     <h1>Ontario Sole Proprietorship Kit</h1>
+    <p>Everything you need to start your solo business in Ontario</p>
   </header>
 
-  <div class="back-button">
-    <a href="startup-kit-ontario.html">&larr; Back</a>
-  </div>
-
   <div class="container">
-    <div class="description">
-      <p>This startup kit is tailored specifically for individuals looking to register a sole proprietorship in Ontario. It includes all the essential forms, legal templates, business name registration tips, and compliance checklists you'll need to get started quickly and legally.</p>
+    <a href="startup-kit-ontario.html" class="back-button">← Back to Ontario Kits</a>
+
+    <h2 class="section-title">What's Included</h2>
+    <div class="info-boxes">
+      <div class="box">
+        <img src="icons/id-card.png" alt="Registration Icon" />
+        <div class="box-content">
+          <h3>Business Registration Guidance</h3>
+          <p>Step-by-step instructions on how to register your sole proprietorship in Ontario, including links to official portals.</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="icons/documents.png" alt="Documents Icon" />
+        <div class="box-content">
+          <h3>Essential Legal Templates</h3>
+          <p>Editable templates for invoices, client agreements, privacy policy, refund terms, and more—customized for Ontario sole proprietors.</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="icons/checklist.png" alt="Checklist Icon" />
+        <div class="box-content">
+          <h3>Compliance Checklist</h3>
+          <p>A detailed checklist to make sure you're fully compliant with Ontario and federal business regulations as a sole proprietor.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="pricing">
-      <h2>Price: $29.99 CAD</h2>
-      <p>Includes complete downloadable kit for Ontario Sole Proprietorship.</p>
-      <div class="access-note">Instant access to download will be granted after purchase.</div>
-    </div>
-
-    <div class="testimonials">
-      <h3>What Users Are Saying</h3>
-
-      <div class="testimonial">"Quick and easy! Had my business registered in a day!" – Sarah, Toronto</div>
-      <div class="testimonial">"Really useful templates and tips. Highly recommend!" – James, Ottawa</div>
-      <div class="testimonial">"Everything I needed in one place. Great value!" – Priya, Mississauga</div>
+    <div class="price-section">
+      <h2>Price: $29 CAD</h2>
+      <p>One-time payment. No subscription required.</p>
+      <p><strong>Instant access to download will be granted after purchase.</strong></p>
+      <a class="buy-btn" href="#">Buy & Download Now</a>
     </div>
   </div>
 
   <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
+
+  <!-- ✅ Tidio Chatbot -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
 </html>
