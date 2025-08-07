@@ -3,124 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ontario Sole Proprietorship Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <title>Ontario Sole Proprietorship Kit - BizKitVault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f0f8ff;
-      color: #333;
+      background-color: #f4f9ff;
+      color: #222;
     }
+
     header {
-      background-color: #007acc;
+      background-color: #1e3a8a;
+      color: white;
       padding: 1rem;
       text-align: center;
-      color: white;
     }
-    .back-link {
-      margin: 1rem;
-      display: inline-block;
-      color: #007acc;
-      font-weight: 600;
-      text-decoration: none;
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
     }
-    .section {
-      max-width: 1000px;
-      margin: auto;
+
+    .intro {
+      text-align: center;
       padding: 2rem 1rem;
     }
-    .title {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-align: center;
+
+    .intro h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: #1e3a8a;
     }
-    .description {
-      text-align: center;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    .grid {
+
+    .kit-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
-    .card {
-      background: white;
+
+    .kit-box {
+      background-color: white;
+      border: 2px solid #c7d2fe;
       border-radius: 12px;
       padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
       transition: transform 0.3s ease;
     }
-    .card:hover {
+
+    .kit-box:hover {
       transform: translateY(-5px);
     }
-    .card img {
+
+    .kit-box img {
       width: 60px;
       height: 60px;
       margin-bottom: 1rem;
     }
-    .card h3 {
+
+    .kit-box h3 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
-      color: #007acc;
+      color: #1e3a8a;
     }
-    .card p {
+
+    .kit-box p {
       font-size: 0.95rem;
     }
+
     .price-section {
-      margin-top: 3rem;
-      background: #ffffff;
-      padding: 2rem;
-      border-radius: 12px;
+      background-color: #e0e7ff;
+      padding: 2rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     .price-section h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      color: #1e3a8a;
     }
+
     .price-section p {
       font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #1e3a8a;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .testimonial-section {
+      padding: 2rem 1rem;
+      background-color: #f0f4ff;
+      text-align: center;
+    }
+
+    .testimonial-section h2 {
+      color: #1e3a8a;
       margin-bottom: 1rem;
     }
-    .price {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #007acc;
-    }
-    .buy-button {
-      background-color: #007acc;
-      color: white;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-    .buy-button:hover {
-      background-color: #005fa3;
-    }
-    .testimonials {
-      margin-top: 4rem;
-    }
+
     .testimonial {
-      background: #e8f4ff;
-      padding: 1rem;
-      margin: 1rem auto;
-      border-radius: 8px;
-      max-width: 600px;
+      max-width: 800px;
+      margin: auto;
       font-style: italic;
+      font-size: 1rem;
     }
-    footer {
-      margin-top: 4rem;
-      background-color: #007acc;
-      color: white;
+
+    .back-link {
+      display: block;
       text-align: center;
+      margin: 1.5rem auto;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e3a8a;
+      color: white;
       padding: 1rem 0;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -130,63 +141,67 @@
     <h1>Ontario Sole Proprietorship Kit</h1>
   </header>
 
-  <a class="back-link" href="startup-kit-ontario.html">&larr; Return to Ontario Startup Kits</a>
+  <div class="intro">
+    <h2>Everything You Need to Start Your Sole Proprietorship in Ontario</h2>
+    <p>Simple, fast, and compliant. This kit walks you through every step.</p>
+  </div>
 
-  <section class="section">
-    <div class="title">Everything You Need to Start Your Sole Proprietorship</div>
-    <div class="description">This kit is tailored for Ontario entrepreneurs starting a sole proprietorship. Simplify your journey with ready-to-use tools, documents, and guidance.</div>
-
-    <div class="grid">
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/business-plan.png" alt="Business Plan">
-        <h3>Business Plan Template</h3>
-        <p>Easy-to-edit business plan to define your goals and strategy.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/agreement.png" alt="Registration Guide">
-        <h3>Registration Guide</h3>
-        <p>Step-by-step instructions to register your business name in Ontario.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/commercial.png" alt="CRA Setup">
-        <h3>CRA Account Setup</h3>
-        <p>Guide to set up your CRA business number and required tax accounts.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/literature.png" alt="Invoice Template">
-        <h3>Invoice Template</h3>
-        <p>Customizable invoice format to start billing your clients professionally.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/contract-job.png" alt="Service Agreement">
-        <h3>Service Agreement</h3>
-        <p>Legal agreement template to protect your business and clients.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/color/96/tax.png" alt="Tax Checklist">
-        <h3>Tax Checklist</h3>
-        <p>Stay compliant with this sole proprietor-specific tax checklist.</p>
-      </div>
+  <div class="kit-container">
+    <div class="kit-box">
+      <img src="icons/registration-color.png" alt="Registration Icon">
+      <h3>Business Registration</h3>
+      <p>Step-by-step guide to register your sole proprietorship in Ontario.</p>
     </div>
 
-    <div class="price-section">
-      <h2>What's Included</h2>
-      <p>Downloadable ZIP file with all templates, guides, and tools.</p>
-      <div class="price">$29.95 CAD</div>
-      <button class="buy-button">Buy Now & Download Instantly</button>
+    <div class="kit-box">
+      <img src="icons/licensing-color.png" alt="Licensing Icon">
+      <h3>Licensing Requirements</h3>
+      <p>Learn which licenses or permits you need to operate legally.</p>
     </div>
 
-    <div class="testimonials">
-      <div class="title">What Users Say</div>
-      <div class="testimonial">"The Ontario Sole Proprietorship Kit saved me hours of research. I was up and running the same day!" – Jasmine K.</div>
-      <div class="testimonial">"Professional, clean, and so easy to use. Highly recommended for new entrepreneurs." – Marc L.</div>
+    <div class="kit-box">
+      <img src="icons/bank-color.png" alt="Banking Icon">
+      <h3>Banking Setup</h3>
+      <p>How to open a business bank account and manage your finances.</p>
     </div>
-  </section>
+
+    <div class="kit-box">
+      <img src="icons/taxation-color.png" alt="Taxation Icon">
+      <h3>Tax & Remittance</h3>
+      <p>Overview of CRA registration, HST, and income reporting.</p>
+    </div>
+
+    <div class="kit-box">
+      <img src="icons/branding-color.png" alt="Branding Icon">
+      <h3>Branding Templates</h3>
+      <p>Customizable logo, invoice, and business card templates.</p>
+    </div>
+
+    <div class="kit-box">
+      <img src="icons/forms-color.png" alt="Forms Icon">
+      <h3>Essential Forms</h3>
+      <p>All the core forms and templates you’ll need to stay compliant.</p>
+    </div>
+  </div>
+
+  <div class="price-section">
+    <h2>Get the Kit for Only $49.00 CAD</h2>
+    <p>Instant access after secure payment. One-time purchase. No hidden fees.</p>
+    <a href="#" class="button">Buy & Download Now</a>
+  </div>
+
+  <div class="testimonial-section">
+    <h2>What Users Are Saying</h2>
+    <p class="testimonial">"This kit made starting my small business unbelievably easy. The step-by-step layout saved me hours of research." - Maria L.</p>
+  </div>
+
+  <a href="startup-kit-ontario.html" class="back-link">← Return to Ontario Startup Kits</a>
 
   <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
+  <!-- Tidio Chatbot Script -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
