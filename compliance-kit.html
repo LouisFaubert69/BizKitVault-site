@@ -3,197 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Small Business Compliance Kit - Canada</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Small Business Compliance Kit</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
     body {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f9ff;
+      padding: 0;
+      background: #f2f7ff;
       color: #333;
     }
 
     header {
-      background-color: #0051a2;
+      background: #1e88e5;
       color: white;
-      padding: 20px;
-      text-align: center;
-      position: relative;
+      padding: 20px 20px 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    .back-button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background-color: #ffffff;
-      color: #0051a2;
-      padding: 8px 16px;
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .back-btn {
+      background: white;
+      color: #1e88e5;
+      border: none;
+      padding: 8px 12px;
       border-radius: 6px;
-      text-decoration: none;
-      font-size: 0.9em;
       font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 10px;
     }
 
     .container {
-      max-width: 1100px;
-      margin: auto;
       padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 10px;
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
     }
 
-    .icon-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
+    .highlight {
+      color: #1e88e5;
+      font-weight: bold;
+    }
+
+    .price-box {
+      background: #e3f2fd;
+      padding: 20px;
+      border-left: 5px solid #1e88e5;
+      border-radius: 8px;
       margin-top: 30px;
     }
 
-    .icon-card {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .icon-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .icon-card img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 15px;
-    }
-
-    .icon-card h3 {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-
-    .price-section {
-      background: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .price-section h2 {
-      font-size: 1.6em;
-      color: #0051a2;
-      margin-bottom: 10px;
-    }
-
-    .price-section p {
-      font-size: 1.2em;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      font-size: 2.5em;
-      color: #00b894;
-      font-weight: 600;
-      margin: 10px 0;
-    }
-
-    .note {
-      font-size: 0.9em;
-      color: #888;
-      margin-top: 8px;
-    }
-
-    .btn {
-      background-color: #00b894;
-      color: white;
-      padding: 12px 30px;
-      font-size: 1em;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 15px;
-    }
-
-    .btn:hover {
-      background-color: #019872;
+    .price-box h2 {
+      margin: 0 0 10px 0;
+      font-size: 22px;
+      color: #1e88e5;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      .price {
-        font-size: 2em;
-      }
+      padding: 20px 10px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="index.html" class="back-button">← Back to Home</a>
     <h1>Small Business Compliance Kit</h1>
-    <p>Complete Compliance Toolkit for Canadian Entrepreneurs</p>
+    <a href="index.html" class="back-btn">Back to Home</a>
   </header>
 
   <div class="container">
-    <h2 class="section-title">What's Included</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Checklist Icon" class="icon" />
 
-    <div class="icon-grid">
-      <div class="icon-card">
-        <img src="https://img.icons8.com/color/96/contract.png" alt="Documents">
-        <h3>Essential Forms</h3>
-        <p>Pre-filled compliance documents for small businesses across Canada.</p>
-      </div>
-      <div class="icon-card">
-        <img src="https://img.icons8.com/color/96/policy-document.png" alt="Policy">
-        <h3>Policy Templates</h3>
-        <p>Workplace policies to meet provincial and federal requirements.</p>
-      </div>
-      <div class="icon-card">
-        <img src="https://img.icons8.com/color/96/compliance--v1.png" alt="Compliance">
-        <h3>Compliance Checklist</h3>
-        <p>Step-by-step national compliance guide.</p>
-      </div>
-      <div class="icon-card">
-        <img src="https://img.icons8.com/color/96/online-support.png" alt="Support">
-        <h3>Support Resources</h3>
-        <p>Useful links, phone numbers, and contacts for assistance.</p>
-      </div>
-      <div class="icon-card">
-        <img src="https://img.icons8.com/color/96/briefcase.png" alt="Briefcase">
-        <h3>Business Best Practices</h3>
-        <p>Tips to stay compliant and organized from day one.</p>
-      </div>
-    </div>
+    <p>
+      Starting and running a small business in Canada comes with a range of compliance responsibilities. This kit simplifies the process by providing a comprehensive checklist and essential documentation every business must follow nationally.
+    </p>
 
-    <div class="price-section">
-      <h2>Complete Kit Price</h2>
-      <p>One-time purchase — no subscriptions or recurring fees</p>
-      <div class="price">$39 CAD</div>
-      <p class="note">Instant access to download will be granted after purchase.</p>
-      <a href="#" class="btn">Buy Now</a>
+    <p>
+      Whether you're a new entrepreneur or an existing business owner, this <span class="highlight">Canada-wide compliance kit</span> ensures you’re meeting federal obligations.
+    </p>
+
+    <div class="price-box">
+      <h2>$39.99 CAD</h2>
+      <p><strong>Instant access to download</strong> will be granted after purchase.</p>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Bizkitvault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
+    2025 BizkitVault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
   </footer>
 
-  <!-- ✅ TIDIO CHATBOT -->
+  <!-- ✅ Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
