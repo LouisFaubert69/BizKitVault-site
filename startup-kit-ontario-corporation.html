@@ -3,169 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ontario Corporation Startup Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Ontario Corporation Kit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f5faff;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
     }
 
     header {
-      background-color: #004aad;
+      background-color: #003366;
       color: white;
-      padding: 2rem 1rem;
+      padding: 20px;
       text-align: center;
-      animation: fadeInDown 1s ease-in-out;
     }
 
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 2.2rem;
     }
 
-    .container {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section-title {
+    .back-button {
+      margin: 20px;
+      display: block;
       text-align: center;
-      font-size: 1.8rem;
-      color: #004aad;
-      margin-bottom: 2rem;
     }
 
-    .features {
+    .back-button a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back-button a:hover {
+      text-decoration: underline;
+    }
+
+    .kit-info {
       display: flex;
+      justify-content: space-around;
       flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: center;
+      margin: 40px 20px;
     }
 
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-      width: 300px;
-      transition: transform 0.3s ease;
+    .kit-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .kit-box img {
+      width: 60px;
+      height: 60px;
     }
 
-    .card img {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 1rem;
+    .kit-box h2 {
+      margin-top: 10px;
+      color: #003366;
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #004aad;
+    .kit-box p {
+      font-size: 16px;
+    }
+
+    .price-section {
+      background-color: #e6f2ff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .price-section h2 {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    .price {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #007BFF;
+    }
+
+    .price-section p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .buy-button {
+      background-color: #28a745;
+      color: white;
+      font-size: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .testimonial-section {
+      padding: 40px 20px;
+      background-color: #fdfdfd;
+      text-align: center;
+    }
+
+    .testimonial-section h2 {
+      color: #003366;
+      margin-bottom: 30px;
     }
 
     .testimonial {
-      background: #ffffff;
-      border-left: 4px solid #004aad;
-      padding: 1rem 1.5rem;
-      border-radius: 10px;
-      margin: 2rem auto;
       max-width: 700px;
+      margin: 20px auto;
       font-style: italic;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .cta p {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .cta button {
-      background-color: #004aad;
-      color: white;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta button:hover {
-      background-color: #003080;
+      color: #333;
     }
 
     footer {
-      background: #004aad;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      padding: 15px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Ontario Corporation Startup Kit</h1>
+    <h1>Ontario Corporation Kit</h1>
   </header>
 
-  <div class="container">
-    <div class="section-title">What’s Inside Your Kit?</div>
-    <div class="features">
-      <div class="card">
-        <img src="https://img.icons8.com/ios-filled/50/company.png" alt="Corporation Icon">
-        <h3>Incorporation Documents</h3>
-        <p>All forms and guides for incorporating federally or provincially in Ontario.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/ios-filled/50/security-checked.png" alt="CRA Icon">
-        <h3>CRA & GST/HST Setup</h3>
-        <p>How to register your Corporation Number, tax accounts, and payroll.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/ios-filled/50/bank.png" alt="Bank Icon">
-        <h3>Corporate Bank Setup</h3>
-        <p>Requirements to open a corporate bank account and maintain compliance.</p>
-      </div>
-    </div>
-
-    <div class="testimonial">
-      “I never thought starting a corporation could be this clear and simple. This kit made it happen.” — Jordan D., Ottawa
-    </div>
-
-    <div class="cta">
-      <p>Only $49.95 CAD</p>
-      <button>Add to Cart</button>
-    </div>
+  <div class="back-button">
+    <a href="startup-kit-ontario.html">&larr; Back to Ontario Startup Kits</a>
   </div>
 
+  <section class="kit-info">
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Incorporation Guide">
+      <h2>Incorporation Guide</h2>
+      <p>Comprehensive steps to incorporate your business federally or provincially in Ontario.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Corporate Bylaws">
+      <h2>Corporate Bylaws</h2>
+      <p>Ready-to-use corporate bylaws and resolutions templates tailored for Ontario corporations.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Tracker">
+      <h2>Compliance Tracker</h2>
+      <p>Stay compliant with annual filings, tax requirements, and shareholder meeting records.</p>
+    </div>
+  </section>
+
+  <section class="price-section">
+    <h2>Get the Full Kit Now</h2>
+    <div class="price">$79 CAD</div>
+    <p>Instant access to download will be granted after purchase.</p>
+    <button class="buy-button">Buy Now</button>
+  </section>
+
+  <section class="testimonial-section">
+    <h2>What Users Are Saying</h2>
+    <div class="testimonial">“A complete lifesaver when incorporating. Everything in one place!” — Daniel W., Toronto</div>
+    <div class="testimonial">“The templates and checklists are worth every penny.” — Sophie L., Ottawa</div>
+    <div class="testimonial">“Made my incorporation process so smooth and stress-free.” — Liam R., Mississauga</div>
+  </section>
+
   <footer>
-    &copy; 2025 BizKitVault.ca – All rights reserved.
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
-  <!-- Tidio Chat -->
+  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
