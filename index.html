@@ -3,62 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BizKitVault - Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d5a4f5.js" crossorigin="anonymous"></script>
-</head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+  <title>BizKitVault - Business Kits for Canadians</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-  <!-- Header -->
-  <header class="bg-white shadow-md p-4 text-center relative">
-    <h1 class="text-3xl font-bold">BizKitVault</h1>
-    <p class="text-sm text-gray-600">Your Digital Toolkit for Canadian Business Success</p>
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #4CAF50;
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.85rem;
+    }
+
+    .testimonials {
+      max-width: 800px;
+      margin: 20px auto 40px;
+      text-align: center;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      color: #4CAF50;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BizKitVault</h1>
+    <p>Launch your business with confidence – everything you need in one place</p>
   </header>
 
-  <!-- Main Content -->
-  <main class="flex-grow p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    
-    <!-- Compliance Kit -->
-    <a href="compliance-kit.html" class="border rounded-lg p-6 bg-white hover:shadow-lg transition">
-      <div class="text-center">
-        <i class="fas fa-clipboard-check text-4xl text-blue-500 mb-4"></i>
-        <h2 class="text-xl font-semibold mb-2">Small Business Compliance Kit</h2>
-        <p class="text-sm text-gray-600">Stay compliant with essential legal documents and checklists.</p>
-      </div>
+  <main class="container">
+    <a href="compliance-kit.html" class="card">
+      <i class="fas fa-clipboard-check"></i>
+      <h2>Compliance Kit</h2>
+      <p>Stay compliant with essential federal regulations. Includes checklists and templates.</p>
     </a>
-
-    <!-- Startup Kit -->
-    <a href="startup-kit.html" class="border rounded-lg p-6 bg-white hover:shadow-lg transition">
-      <div class="text-center">
-        <i class="fas fa-briefcase text-4xl text-green-500 mb-4"></i>
-        <h2 class="text-xl font-semibold mb-2">Startup Kit by Province</h2>
-        <p class="text-sm text-gray-600">Customized startup packages based on your province and structure.</p>
-      </div>
+    <a href="startup-kit.html" class="card">
+      <i class="fas fa-rocket"></i>
+      <h2>Startup Kit by Province</h2>
+      <p>Tailored startup kits for Ontario, Quebec, and Alberta. All legal docs included.</p>
     </a>
-
-    <!-- Micro Courses -->
-    <a href="micro-courses.html" class="border rounded-lg p-6 bg-white hover:shadow-lg transition flex flex-col justify-between">
-      <div class="text-center">
-        <i class="fas fa-graduation-cap text-4xl text-yellow-500 mb-4"></i>
-        <h2 class="text-xl font-semibold mb-2">Micro Courses</h2>
-        <p class="text-sm text-gray-600 mb-4">Learn business essentials quickly and efficiently.</p>
-      </div>
-      <!-- Testimonials -->
-      <div class="mt-4 text-left text-sm text-gray-700 border-t pt-2">
-        <p><strong>“Fantastic course!”</strong> - Olivia, BC</p>
-        <p><strong>“Perfect for beginners.”</strong> - Marcus, ON</p>
-        <p><strong>“Quick and effective.”</strong> - Ayesha, AB</p>
-      </div>
+    <a href="micro-courses.html" class="card">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h2>Micro Courses</h2>
+      <p>Quick, focused business training on legal, compliance, and startup essentials.</p>
     </a>
-
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-200 text-center text-sm text-gray-700 p-4 mt-8">
+  <section class="testimonials">
+    <h2>What Entrepreneurs Are Saying</h2>
+    <div class="testimonial">
+      <p>"This site saved me hours of work. The Ontario startup kit had everything I needed!"</p>
+      <strong>— Sarah, Toronto</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Perfect for launching my first business. Easy to follow and super helpful."</p>
+      <strong>— Marc, Montreal</strong>
+    </div>
+    <div class="testimonial">
+      <p>"I loved the micro courses! Short, to the point, and relevant."</p>
+      <strong>— Ayesha, Calgary</strong>
+    </div>
+  </section>
+
+  <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
-  <!-- Tidio Chatbot -->
+  <!-- ✅ Tidio Chatbot Integration -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+
 </body>
 </html>
