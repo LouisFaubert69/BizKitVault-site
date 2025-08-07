@@ -3,107 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BizKitVault - Digital Vending Machine</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yQ4G1w2PZb7N9Q5u6IcC1N8z0zF8hPoFCPyEjfuFbyMRj0q8phW9JKUjNkJh7iE4m7qUbgYbX4Dqz5wxboZ7xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>BizKitVault - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f4f8fb;
-      color: #333;
+      background-color: #f7f7f7;
     }
     header {
-      background-color: #0d6efd;
+      background-color: #4a90e2;
       color: white;
-      padding: 20px;
+      padding: 1rem 2rem;
       text-align: center;
-      font-size: 26px;
     }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      padding: 40px;
-      max-width: 1100px;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 1rem;
+      font-style: italic;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
       margin: auto;
     }
-    .card {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .box {
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      padding: 30px 20px;
+      padding: 1.5rem;
+      border-radius: 12px;
       text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
-    .card:hover {
+    .box:hover {
       transform: translateY(-5px);
     }
-    .card i {
-      font-size: 48px;
-      color: #0d6efd;
-      margin-bottom: 15px;
+    .box i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #4a90e2;
     }
-    .card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .box h3 {
+      margin: 0.5rem 0;
     }
-    .card p {
-      font-size: 14px;
+    .box p {
       color: #555;
     }
+    .testimonials {
+      background: #ffffff;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .testimonial {
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #4a90e2;
+      padding-left: 1rem;
+    }
     footer {
-      background-color: #0d6efd;
+      background-color: #333;
       color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-<header>
-  BizKitVault Digital Vending Machine
-</header>
+  <header>
+    <h1>BizKitVault</h1>
+    <p>Startup Success, One Kit at a Time.</p>
+  </header>
 
-<section class="container">
+  <div class="section">
+    <div class="grid">
+      <div class="box">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Compliance Kit</h3>
+        <p>All the tools to stay legally compliant across Canada.</p>
+      </div>
 
-  <a href="compliance-kit.html">
-    <div class="card">
-      <i class="fas fa-clipboard-check"></i>
-      <h3>Small Business Compliance Kit</h3>
-      <p>Canada-wide regulatory templates, checklists, and guides.</p>
+      <div class="box">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3>Startup Kit by Province</h3>
+        <p>Tailored business kits for Ontario, Quebec, and Alberta.</p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Micro Courses</h3>
+        <p>Short and actionable training modules for entrepreneurs.</p>
+      </div>
     </div>
-  </a>
 
-  <a href="startup-kit.html">
-    <div class="card">
-      <i class="fas fa-map-marked-alt"></i>
-      <h3>Startup Kit by Province</h3>
-      <p>Tailored startup documentation for each province's laws.</p>
+    <div class="testimonials">
+      <h2>💬 What Users Are Saying:</h2>
+
+      <div class="testimonial">
+        <p>⭐⭐⭐⭐⭐ <br>
+        “These kits made registering my small business so much easier. Thank you BizKitVault!”<br>
+        — <em>Jasmine T., Toronto, ON</em></p>
+      </div>
+
+      <div class="testimonial">
+        <p>⭐⭐⭐⭐⭐ <br>
+        “I was lost on what forms to file. The Compliance Kit saved me hours!”<br>
+        — <em>Marco D., Calgary, AB</em></p>
+      </div>
+
+      <div class="testimonial">
+        <p>⭐⭐⭐⭐⭐ <br>
+        “Fast download, clear steps, and helpful chatbot. Highly recommend!”<br>
+        — <em>Sophie L., Montreal, QC</em></p>
+      </div>
     </div>
-  </a>
+  </div>
 
-  <a href="micro-courses.html">
-    <div class="card">
-      <i class="fas fa-graduation-cap"></i>
-      <h3>Micro Courses</h3>
-      <p>Quick, effective training modules for new entrepreneurs.</p>
-    </div>
-  </a>
+  <footer>
+    &copy; 2025 BizKitVault. All rights reserved.
+  </footer>
 
-</section>
-
-<footer>
-  2025 BizkitVault.ca - Empowering Canadian Entrepreneurs - All Rights Reserved.
-</footer>
-
-<!-- ✅ Tidio Chatbot -->
-<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+  <!-- ✅ Tidio Chatbot -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
 </html>
