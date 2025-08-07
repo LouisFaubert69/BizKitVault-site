@@ -2,166 +2,119 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kit Société par Actions – Québec</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Société par Actions – Québec</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      background: #f8f9fa;
-      color: #333;
+      padding: 0;
+      background: #fdfdfd;
     }
-
     header {
-      background: #004085;
+      background-color: #8B0000;
       color: white;
-      padding: 1.5rem;
       text-align: center;
+      padding: 2rem 1rem;
     }
-
-    nav {
-      background: #003366;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    h1 {
-      color: #004085;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .feature {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .feature:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature i {
+    header h1 {
+      margin: 0;
       font-size: 2rem;
-      color: #007bff;
+    }
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .content h2 {
+      color: #8B0000;
+      margin-top: 2rem;
+    }
+    .content ul {
+      list-style: none;
+      padding: 0;
+    }
+    .content ul li {
       margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
     }
-
+    .content ul li::before {
+      content: "✔";
+      color: green;
+      position: absolute;
+      left: 0;
+    }
     .price {
+      margin-top: 2rem;
+      background: #ffecec;
+      padding: 1.5rem;
+      border-radius: 10px;
       text-align: center;
-      font-size: 1.3rem;
-      font-weight: bold;
-      color: #28a745;
-      margin: 2rem 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .btn {
-      display: block;
-      width: fit-content;
-      margin: 1rem auto;
-      padding: 0.75rem 1.5rem;
-      background: #007bff;
+    .price h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #8B0000;
+    }
+    .price p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .buy-button {
+      margin-top: 1rem;
+      background-color: #8B0000;
       color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      text-align: center;
+      display: inline-block;
     }
-
+    .buy-button:hover {
+      background-color: #a10000;
+    }
     footer {
-      background: #003366;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-
-    @media (max-width: 600px) {
-      .feature i {
-        font-size: 1.5rem;
-      }
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Kit Société par Actions – Québec</h1>
+  <h1>Société par Actions – Québec</h1>
 </header>
 
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="startup-kit-quebec.html">Retour au Québec</a>
-</nav>
+<div class="content">
+  <p>La trousse de démarrage pour une société par actions comprend :</p>
+  <ul>
+    <li>Guide pour immatriculer une société par actions au Québec</li>
+    <li>Modèle de statuts constitutifs</li>
+    <li>Règlements internes personnalisables</li>
+    <li>Checklist des exigences fiscales et licences provinciales</li>
+    <li>Modèles de procès-verbaux et résolutions</li>
+  </ul>
 
-<div class="container">
-  <p style="text-align:center;">Ce kit est conçu pour les entrepreneurs souhaitant créer une société par actions (compagnie incorporée) au Québec. Il comprend tous les documents, procédures, et conseils essentiels pour démarrer efficacement.</p>
-
-  <div class="features">
-    <div class="feature">
-      <i class="fas fa-file-contract"></i>
-      <h3>Statuts constitutifs</h3>
-      <p>Modèles personnalisables pour constituer légalement votre société par actions.</p>
-    </div>
-
-    <div class="feature">
-      <i class="fas fa-cogs"></i>
-      <h3>Règlements internes</h3>
-      <p>Modèle de règlement intérieur structurant la gouvernance de l'entreprise.</p>
-    </div>
-
-    <div class="feature">
-      <i class="fas fa-balance-scale"></i>
-      <h3>Déclarations fiscales</h3>
-      <p>Checklist des obligations fiscales pour les sociétés incorporées.</p>
-    </div>
-
-    <div class="feature">
-      <i class="fas fa-id-badge"></i>
-      <h3>Permis & licences</h3>
-      <p>Liste complète des permis requis pour opérer au Québec selon votre secteur.</p>
-    </div>
-
-    <div class="feature">
-      <i class="fas fa-comments"></i>
-      <h3>Chatbot d’aide</h3>
-      <p>Obtenez des réponses rapides à vos questions via notre assistant intelligent.</p>
-    </div>
+  <div class="price">
+    <h3>Prix : 99,99$ CAD</h3>
+    <p>Téléchargement immédiat après le paiement.</p>
+    <a href="#" class="buy-button">Ajouter au panier</a>
   </div>
-
-  <div class="price">Prix : 69,99 $</div>
-
-  <a href="#" class="btn">Ajouter au panier</a>
 </div>
 
 <footer>
-  &copy; 2025 BizKitVault.ca – Tous droits réservés.
+  &copy; 2025 BizKitVault.ca – Tous droits réservés
 </footer>
 
-<!-- Chatbot Integration (Replace with your real Tidio ID) -->
-<script src="//code.tidio.co/YOUR-TIDIO-ID.js" async></script>
+<!-- Tidio Chatbot -->
+<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
 </html>
