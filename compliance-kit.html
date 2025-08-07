@@ -4,146 +4,176 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Small Business Compliance Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
       background: #f9f9f9;
-      color: #333;
+      margin: 0;
+      padding: 0;
     }
+
     header {
-      background-color: #004aad;
+      background-color: #007BFF;
       color: white;
-      padding: 20px;
-      text-align: center;
-      position: relative;
+      padding: 1.2em 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
+
     header h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 1.6em;
     }
-    .back-button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
+
+    .back-btn {
       background-color: white;
-      color: #004aad;
+      color: #007BFF;
       border: none;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 5px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 0.9em;
+      margin-top: 0.5em;
     }
-    .icon-section {
+
+    .container {
+      padding: 2em 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .icon-boxes {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
-    }
-    .icon-box {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 280px;
-      padding: 25px;
+      justify-content: space-around;
+      gap: 1.5em;
       text-align: center;
-      transition: transform 0.3s ease;
     }
+
+    .icon-box {
+      flex: 1 1 250px;
+      background-color: #f0f8ff;
+      padding: 1.2em;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+    }
+
     .icon-box:hover {
       transform: translateY(-5px);
     }
-    .icon-box img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 20px;
+
+    .icon-box i {
+      font-size: 2.5em;
+      color: #007BFF;
+      margin-bottom: 0.5em;
     }
-    .icon-box h3 {
-      margin-bottom: 10px;
-      color: #004aad;
-    }
+
     .icon-box p {
-      font-size: 15px;
+      font-size: 1em;
+      margin: 0;
     }
+
     .price-section {
-      background-color: #fff;
-      padding: 40px 20px;
       text-align: center;
-    }
-    .price-section h2 {
-      margin-bottom: 10px;
-      font-size: 28px;
-    }
-    .price-section p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .price {
-      font-size: 36px;
-      color: #004aad;
-      margin-bottom: 10px;
-    }
-    .add-to-cart {
-      background-color: #004aad;
-      color: white;
-      padding: 14px 28px;
-      font-size: 16px;
-      border: none;
+      background-color: #e7f1ff;
+      padding: 1.5em;
       border-radius: 10px;
+    }
+
+    .price-section h2 {
+      font-size: 1.8em;
+      color: #007BFF;
+      margin-bottom: 0.5em;
+    }
+
+    .price-section p {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+
+    .price-section button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
-    .add-to-cart:hover {
-      background-color: #00317a;
-    }
+
     footer {
       text-align: center;
-      padding: 25px;
-      font-size: 14px;
-      background-color: #eee;
+      padding: 1.2em;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
       color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .icon-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .back-btn {
+        margin-top: 0.5em;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <button class="back-button" onclick="history.back()">Back</button>
     <h1>Small Business Compliance Kit</h1>
+    <button class="back-btn" onclick="window.location.href='index.html'">Back</button>
   </header>
 
-  <section class="icon-section">
-    <div class="icon-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Checklist Icon" />
-      <h3>Compliance Checklist</h3>
-      <p>Step-by-step checklist to ensure your business meets legal and regulatory requirements.</p>
-    </div>
-    <div class="icon-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Legal Templates Icon" />
-      <h3>Legal Templates</h3>
-      <p>Essential customizable documents such as NDAs, contracts, and privacy policies.</p>
-    </div>
-    <div class="icon-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Federal and Provincial Laws Icon" />
-      <h3>Federal & Provincial Laws</h3>
-      <p>Understand relevant legislation across Canada to stay compliant wherever you operate.</p>
-    </div>
-  </section>
+  <div class="container">
 
-  <section class="price-section">
-    <h2>Complete Kit for Canadian Businesses</h2>
-    <p>Everything you need to stay legally compliant across all provinces and territories.</p>
-    <div class="price">$49.99 CAD</div>
-    <p><em>Instant access to download after purchase.</em></p>
-    <button class="add-to-cart">Add to Cart</button>
-  </section>
+    <div class="section">
+      <div class="icon-boxes">
+        <div class="icon-box">
+          <i class="fas fa-clipboard-check"></i>
+          <p>Compliance Checklist</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-file-contract"></i>
+          <p>Legal Templates</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-scale-balanced"></i>
+          <p>Federal and Provincial Laws</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="price-section">
+      <h2>$39.99 CAD</h2>
+      <p>Instant access to download will be granted after purchase.</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
 
   <footer>
-    2025 BizkitVault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
+    2025 BizKitVault.ca - Empowering Canadian Entrepreneurs – All Rights Reserved.
   </footer>
 
-  <!-- Tidio Chatbot Script -->
-  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
