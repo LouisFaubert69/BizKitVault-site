@@ -1,146 +1,145 @@
-<!DOCTYPE html><html lang="fr"><head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Démarrage d'Entreprise Québec</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trousse de Démarrage - Québec</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * {
+    body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }body {
-  background: #f4f4f4;
-  color: #333;
-}
+      background: #f4f4f4;
+      color: #333;
+    }
 
-header {
-  background-color: #0055a4;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
+    header {
+      background: #005bac;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
 
-header h1 {
-  font-size: 2.5rem;
-}
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
 
-.container {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
+    .kits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
 
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
-}
+    .kit {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      text-align: center;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .kit:hover {
+      transform: scale(1.03);
+    }
 
-.card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
+    .kit i {
+      font-size: 3rem;
+      color: #005bac;
+      margin-bottom: 1rem;
+    }
 
-.card i {
-  font-size: 2rem;
-  margin-right: 10px;
-  color: #0055a4;
-}
+    .kit h2 {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+    }
 
-.price {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
+    .testimonial-section {
+      background: #fff;
+      padding: 3rem 2rem;
+    }
 
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #0055a4;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
+    .testimonial-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #005bac;
+    }
 
-.testimonials {
-  margin-top: 3rem;
-}
+    .testimonial {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #f0f0f0;
+      padding: 1.5rem;
+      border-left: 5px solid #005bac;
+      border-radius: 6px;
+      font-style: italic;
+    }
 
-.testimonial {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-left: 5px solid #0055a4;
-}
+    footer {
+      background: #005bac;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
 
-.testimonial p {
-  margin-bottom: 0.5rem;
-}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-.testimonial span {
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  color: #555;
-}
-
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
-</head><body>
+</head>
+<body>
+
   <header>
-    <h1>Kits de Démarrage d'Entreprise au Québec</h1>
-    <p>Choisissez la structure juridique adaptée à votre entreprise</p>
-  </header>  <div class="container">
-    <div class="card">
-      <h2><i class="fas fa-user"></i> Entreprise Individuelle</h2>
-      <p>Parfait pour les entrepreneurs seuls qui souhaitent démarrer rapidement avec un minimum de formalités.</p>
-      <div class="price">49,99 $</div>
-      <a href="entreprise-individuelle.html" class="btn">Voir le kit</a>
-    </div><div class="card">
-  <h2><i class="fas fa-users"></i> Société de Personnes</h2>
-  <p>Idéal pour les entreprises fondées par deux personnes ou plus souhaitant partager les responsabilités et profits.</p>
-  <div class="price">69,99 $</div>
-  <a href="societe-de-personnes.html" class="btn">Voir le kit</a>
-</div>
+    <h1>Trousse de Démarrage pour le Québec</h1>
+  </header>
 
-<div class="card">
-  <h2><i class="fas fa-building"></i> Société par Actions</h2>
-  <p>Recommandé pour les entreprises avec une vision de croissance à long terme et désirant une structure formelle.</p>
-  <div class="price">99,99 $</div>
-  <a href="societe-par-actions.html" class="btn">Voir le kit</a>
-</div>
+  <section class="kits">
+    <a href="quebec-entreprise-individuelle.html">
+      <div class="kit">
+        <i class="fas fa-briefcase"></i>
+        <h2>Entreprise Individuelle</h2>
+        <p>Tout ce dont vous avez besoin pour démarrer votre entreprise individuelle au Québec.</p>
+      </div>
+    </a>
+    <a href="quebec-societe-personnes.html">
+      <div class="kit">
+        <i class="fas fa-users"></i>
+        <h2>Société de Personnes</h2>
+        <p>Les documents et informations clés pour une société de personnes québécoise.</p>
+      </div>
+    </a>
+    <a href="quebec-societe-actions.html">
+      <div class="kit">
+        <i class="fas fa-building"></i>
+        <h2>Société par Actions</h2>
+        <p>Outils professionnels pour lancer votre société par actions au Québec.</p>
+      </div>
+    </a>
+  </section>
 
-<div class="testimonials">
-  <h2>Ce que nos utilisateurs disent :</h2>
-  <div class="testimonial">
-    <p>"Grâce à ces kits, j'ai pu enregistrer mon entreprise en moins de 24 heures !"</p>
-    <span>- Marc L.</span>
-  </div>
-  <div class="testimonial">
-    <p>"Simple, rapide et efficace. Je recommande fortement."</p>
-    <span>- Sophie D.</span>
-  </div>
-</div>
+  <section class="testimonial-section">
+    <h2>Ce que nos utilisateurs disent</h2>
+    <div class="testimonial">
+      “J'ai lancé mon entreprise au Québec grâce à cette trousse. C'était rapide, facile et abordable!” – Marie L.
+    </div>
+  </section>
 
-  </div>  <footer>
+  <footer>
     &copy; 2025 BizKitVault.ca - Tous droits réservés
-  </footer>  <!-- Tidio Chatbot -->  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var tidioScript = document.createElement("script");
-      tidioScript.src = "//code.tidio.co/2ilbftdrqf8frz8hzrfb9ho3ypze9z7j.js";
-      tidioScript.async = true;
-      document.body.appendChild(tidioScript);
-    });
-  </script></body></html>
+  </footer>
+
+  <!-- ✅ Tidio Chatbot (same as Ontario) -->
+  <script src="//code.tidio.co/YOUR_PUBLIC_TIDIO_KEY.js" async></script>
+
+</body>
+</html>
