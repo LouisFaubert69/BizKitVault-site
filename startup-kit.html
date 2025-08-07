@@ -3,102 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Startup Kits by Province</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Startup Kits by Province - BizKitVault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f7fa;
+      color: #333;
     }
+
     header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
+      background-color: #4a90e2;
+      color: white;
       text-align: center;
+      padding: 2rem 1rem;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
     .back-button {
-      margin: 20px;
+      margin: 1rem;
       display: inline-block;
-      padding: 10px 20px;
-      background-color: #555;
+      background-color: #4a90e2;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
     }
-    h1 {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .province-container {
+
+    .container {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 40px 20px;
-    }
-    .province-box {
-      width: 250px;
-      height: 180px;
-      color: white;
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .province-box {
+      width: 90%;
+      max-width: 500px;
+      margin: 1rem auto;
+      padding: 1.5rem;
+      border-radius: 12px;
       text-align: center;
-      border-radius: 10px;
-      font-size: 20px;
+      font-size: 1.3rem;
       font-weight: bold;
+      color: white;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
+
     .province-box:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
     }
-    .ontario { background-color: #990000; }   /* Dark red */
-    .quebec { background-color: #003399; }    /* Quebec blue */
-    .alberta { background-color: #006644; }   /* Alberta green */
+
+    .ontario { background-color: #d32f2f; }    /* Red */
+    .quebec { background-color: #1976d2; }     /* Blue */
+    .alberta { background-color: #388e3c; }    /* Green */
+
     .coming-soon {
-      text-align: center;
-      font-size: 20px;
+      margin-top: 2rem;
+      font-size: 1.2rem;
       font-weight: bold;
-      color: #444;
-      margin-top: 40px;
+      color: #4a90e2;
+      animation: pulse 2s infinite;
     }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
     footer {
       background-color: #222;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 60px;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      .province-box {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Startup Kits by Province</h1>
-  </header>
-
   <a href="index.html" class="back-button">← Back</a>
 
-  <div class="province-container">
-    <a href="startup-kit-ontario.html" class="province-box ontario">Ontario Startup Kit</a>
-    <a href="startup-kit-quebec.html" class="province-box quebec">Quebec Startup Kit</a>
-    <a href="startup-kit-alberta.html" class="province-box alberta">Alberta Startup Kit</a>
-  </div>
+  <header>
+    <h1>Startup Kits by Province</h1>
+    <p>Select your province to get started with your tailored kit</p>
+  </header>
 
-  <div class="coming-soon">
-    🚀 More provinces coming soon!
+  <div class="container">
+    <a href="startup-kit-ontario.html" class="province-box ontario">Ontario Startup Kit</a>
+    <a href="startup-kit-quebec.html" class="province-box quebec">Québec Startup Kit</a>
+    <a href="startup-kit-alberta.html" class="province-box alberta">Alberta Startup Kit</a>
+
+    <div class="coming-soon">🚀 More provinces coming soon!</div>
   </div>
 
   <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
-  <!-- Tidio Chatbot -->
+  <!-- Tidio Chatbot Script -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
 </body>
