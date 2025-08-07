@@ -4,117 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Small Business Compliance Kit</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f8fb;
       margin: 0;
       padding: 0;
-      background: #f2f7ff;
       color: #333;
     }
-
     header {
-      background: #1e88e5;
+      background-color: #0066cc;
       color: white;
-      padding: 20px 20px 10px 20px;
+      padding: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
     }
-
     header h1 {
-      font-size: 22px;
       margin: 0;
+      font-size: 1.5rem;
     }
-
-    .back-btn {
-      background: white;
-      color: #1e88e5;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 14px;
+    header a.back-button {
+      background-color: white;
+      color: #0066cc;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: bold;
+      margin-top: 0.5rem;
     }
-
     .container {
-      padding: 30px 20px;
       max-width: 800px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
       border-radius: 10px;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     .icon {
       width: 80px;
       height: 80px;
-      margin-bottom: 20px;
     }
-
-    .highlight {
-      color: #1e88e5;
+    h2 {
+      margin-top: 1rem;
+      color: #0066cc;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .price {
+      font-size: 1.5rem;
       font-weight: bold;
+      margin-top: 2rem;
+      color: #27ae60;
     }
-
-    .price-box {
-      background: #e3f2fd;
-      padding: 20px;
-      border-left: 5px solid #1e88e5;
-      border-radius: 8px;
-      margin-top: 30px;
+    .note {
+      font-style: italic;
+      margin-top: 0.5rem;
     }
-
-    .price-box h2 {
-      margin: 0 0 10px 0;
-      font-size: 22px;
-      color: #1e88e5;
-    }
-
     footer {
+      margin-top: 3rem;
       text-align: center;
-      padding: 20px 10px;
-      font-size: 14px;
-      color: #555;
+      font-size: 0.9rem;
+      color: #777;
+      padding-bottom: 2rem;
     }
   </style>
 </head>
 <body>
+  <!-- ✅ Tidio Chat Script -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 
+  <!-- ✅ Header -->
   <header>
     <h1>Small Business Compliance Kit</h1>
-    <a href="index.html" class="back-btn">Back to Home</a>
+    <a class="back-button" href="index.html">Back to Home</a>
   </header>
 
+  <!-- ✅ Main Container -->
   <div class="container">
-    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Checklist Icon" class="icon" />
+    <img class="icon" src="assets/icons/compliance-checklist.png" alt="Compliance Icon" onerror="this.style.display='none'">
+    
+    <h2>What's Inside:</h2>
+    <ul>
+      <li>Federal & Provincial Registration Guidance</li>
+      <li>Tax Compliance (GST/HST, Payroll, etc.)</li>
+      <li>Workplace Health & Safety Overview</li>
+      <li>Employment Standards & Labour Law Basics</li>
+      <li>Data Privacy and Consumer Protection</li>
+      <li>Document Templates (Policies, Contracts)</li>
+      <li>Annual Checklist for Compliance Maintenance</li>
+    </ul>
 
-    <p>
-      Starting and running a small business in Canada comes with a range of compliance responsibilities. This kit simplifies the process by providing a comprehensive checklist and essential documentation every business must follow nationally.
-    </p>
-
-    <p>
-      Whether you're a new entrepreneur or an existing business owner, this <span class="highlight">Canada-wide compliance kit</span> ensures you’re meeting federal obligations.
-    </p>
-
-    <div class="price-box">
-      <h2>$39.99 CAD</h2>
-      <p><strong>Instant access to download</strong> will be granted after purchase.</p>
-    </div>
+    <div class="price">$47 CAD</div>
+    <div class="note">Instant access to download will be granted after purchase.</div>
   </div>
 
+  <!-- ✅ Footer -->
   <footer>
     2025 BizkitVault.ca – Empowering Canadian Entrepreneurs – All Rights Reserved.
   </footer>
-
-  <!-- ✅ Tidio Chatbot -->
-  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
-
 </body>
 </html>
