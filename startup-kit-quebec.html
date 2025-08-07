@@ -2,94 +2,174 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trousse de démarrage - Québec | BizKitVault</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit de Démarrage – Québec</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .icon-style { width: 48px; height: 48px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #004085;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #003366;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #e9ecef;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card li {
+      margin-bottom: 0.75rem;
+    }
+
+    .card li i {
+      color: #007bff;
+      margin-right: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-  <!-- Navigation -->
-  <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-600">BizKitVault</h1>
-      <a href="index.html" class="text-blue-500 hover:underline">Accueil</a>
-    </div>
-  </nav>
+<header>
+  <h1>Kit de Démarrage pour Entreprises – Québec</h1>
+</header>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-100 py-16 px-6 text-center" data-aos="fade-down">
-    <h2 class="text-4xl font-extrabold mb-4">Trousse de démarrage pour le Québec</h2>
-    <p class="text-lg max-w-2xl mx-auto">Tout ce dont vous avez besoin pour démarrer votre entreprise au Québec, selon la structure juridique que vous choisissez.</p>
-  </section>
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="startup-kit-ontario.html">Ontario</a>
+  <a href="startup-kit-quebec.html">Québec</a>
+  <a href="startup-kit-alberta.html">Alberta</a>
+</nav>
 
-  <!-- Legal Structures -->
-  <section class="py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h3 class="text-2xl font-bold mb-8 text-center">Choisissez votre structure juridique</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <!-- Entreprise Individuelle -->
-      <a href="startup-kit-quebec-entreprise.html" class="bg-white shadow-md p-6 rounded-xl hover:shadow-xl transition">
-        <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-business-business-flat-icons-inmotus-design-5.png" alt="Individuelle" class="mx-auto icon-style">
-        <h4 class="font-semibold text-xl mt-4">Entreprise Individuelle</h4>
-        <p class="text-sm mt-2 text-gray-600">Pour les entrepreneurs seuls avec une structure simple.</p>
-      </a>
+<section class="hero">
+  <h1>Démarrez votre entreprise au Québec selon votre structure juridique</h1>
+  <p>Choisissez le bon kit adapté à votre type d’entreprise pour garantir la conformité avec les lois du Québec.</p>
+</section>
 
-      <!-- Société de Personnes -->
-      <a href="startup-kit-quebec-societe-personnes.html" class="bg-white shadow-md p-6 rounded-xl hover:shadow-xl transition">
-        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-partnership-agreement-flaticons-lineal-color-flat-icons.png" alt="Partenariat" class="mx-auto icon-style">
-        <h4 class="font-semibold text-xl mt-4">Société de Personnes</h4>
-        <p class="text-sm mt-2 text-gray-600">Pour les entreprises fondées avec un ou plusieurs partenaires.</p>
-      </a>
+<section class="cards">
+  <div class="card">
+    <h2><i class="fas fa-user"></i> Entreprise Individuelle</h2>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Registre des entreprises</li>
+      <li><i class="fas fa-check-circle"></i> Modèle de facturation</li>
+      <li><i class="fas fa-check-circle"></i> Guide fiscal simplifié</li>
+      <li><i class="fas fa-check-circle"></i> Licences nécessaires</li>
+      <li><i class="fas fa-check-circle"></i> Support par chatbot</li>
+    </ul>
+    <a href="startup-kit-quebec-entreprise-individuelle.html" class="btn">Voir le kit</a>
+  </div>
 
-      <!-- Société par Actions -->
-      <a href="startup-kit-quebec-societe-actions.html" class="bg-white shadow-md p-6 rounded-xl hover:shadow-xl transition">
-        <img src="https://img.icons8.com/external-flat-juicy-fish/60/000000/external-company-business-and-finance-flat-flat-juicy-fish.png" alt="Corporation" class="mx-auto icon-style">
-        <h4 class="font-semibold text-xl mt-4">Société par Actions</h4>
-        <p class="text-sm mt-2 text-gray-600">Pour une entreprise incorporée avec responsabilités limitées.</p>
-      </a>
-    </div>
-  </section>
+  <div class="card">
+    <h2><i class="fas fa-users"></i> Société de Personnes</h2>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Contrat de partenariat</li>
+      <li><i class="fas fa-check-circle"></i> Enregistrement auprès du REQ</li>
+      <li><i class="fas fa-check-circle"></i> Plan de répartition des profits</li>
+      <li><i class="fas fa-check-circle"></i> Licences provinciales</li>
+      <li><i class="fas fa-check-circle"></i> Assistance par chatbot</li>
+    </ul>
+    <a href="startup-kit-quebec-societe-de-personnes.html" class="btn">Voir le kit</a>
+  </div>
 
-  <!-- Testimonials -->
-  <section class="bg-white py-16 px-6" data-aos="fade-up">
-    <h3 class="text-2xl font-bold text-center mb-12">Témoignages</h3>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <p class="italic">"Grâce à BizKitVault, j’ai pu enregistrer mon entreprise en quelques clics!"</p>
-        <p class="mt-4 font-bold text-blue-600">— Camille L., Montréal</p>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <p class="italic">"La trousse de démarrage m’a sauvé beaucoup de temps."</p>
-        <p class="mt-4 font-bold text-blue-600">— Jean-François M., Québec</p>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <p class="italic">"Très simple, abordable et complet. Je recommande à tous."</p>
-        <p class="mt-4 font-bold text-blue-600">— Mélanie R., Laval</p>
-      </div>
-    </div>
-  </section>
+  <div class="card">
+    <h2><i class="fas fa-building"></i> Société par Actions</h2>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Statuts constitutifs</li>
+      <li><i class="fas fa-check-circle"></i> Règlements internes</li>
+      <li><i class="fas fa-check-circle"></i> Déclarations fiscales</li>
+      <li><i class="fas fa-check-circle"></i> Permis obligatoires</li>
+      <li><i class="fas fa-check-circle"></i> Aide interactive</li>
+    </ul>
+    <a href="startup-kit-quebec-societe-par-actions.html" class="btn">Voir le kit</a>
+  </div>
+</section>
 
-  <!-- Coming Soon -->
-  <section class="py-12 px-6 text-center text-gray-600" data-aos="fade-up">
-    <p>D'autres provinces à venir très bientôt!</p>
-  </section>
+<footer>
+  &copy; 2025 BizKitVault.ca – Tous droits réservés.
+</footer>
 
-  <!-- Footer -->
-  <footer class="bg-blue-100 text-center py-6">
-    <p>&copy; 2025 BizKitVault. Tous droits réservés.</p>
-  </footer>
-
-  <!-- AOS + Chatbot -->
-  <script>
-    AOS.init();
-  </script>
-  <script src="//code.tidio.co/YOUR_TIDIO_ID_HERE.js" async></script>
+<!-- Chatbot (Tidio or other integration) -->
+<script src="//code.tidio.co/YOUR-TIDIO-ID.js" async></script>
 
 </body>
 </html>
