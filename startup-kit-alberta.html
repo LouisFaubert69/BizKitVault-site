@@ -2,136 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alberta Startup Kit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Startup Kits – Alberta | BizKitVault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      background: #eef6f7;
-      color: #222;
+      background: #f8f8f8;
     }
     header {
-      background: #006d77;
-      padding: 20px;
+      background-color: #0066cc;
       color: white;
       text-align: center;
+      padding: 2rem 1rem;
     }
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .hero {
-      background: #83c5be;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      animation: fadeIn 1s ease-in;
-    }
-    .hero h1 {
+    header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2rem;
     }
-    .download-btn {
-      margin-top: 20px;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      background: #ff6b6b;
-      border: none;
-      color: white;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: background 0.3s;
-    }
-    .download-btn:hover {
-      background: #e05555;
-    }
-    .icons {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .icon-card {
-      width: 250px;
-      background: white;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    .intro {
+      padding: 1.5rem;
       text-align: center;
-      transition: transform 0.3s;
     }
-    .icon-card:hover {
+    .kits {
+      display: grid;
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .kit {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .kit:hover {
       transform: translateY(-5px);
     }
-    .icon-card img {
-      width: 60px;
-      margin-bottom: 10px;
+    .kit h2 {
+      margin-top: 0;
     }
-    .testimonials {
-      margin-top: 60px;
+    .kit a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #0066cc;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
     }
-    .testimonial {
-      background: white;
-      padding: 20px;
-      margin: 15px 0;
-      border-left: 5px solid #adb5bd;
+    .kit a:hover {
+      background: #004999;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background: #006d77;
-      color: white;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h2>BizKitVault – Alberta Startup Kit</h2>
-  </header>
 
-  <div class="hero">
-    <h1>Launch Your Business in Alberta</h1>
-    <p>Everything you need to get started, Alberta style.</p>
-    <button class="download-btn" onclick="alert('Download link coming soon')">Download Kit</button>
+<header>
+  <h1>Startup Kits – Alberta</h1>
+</header>
+
+<div class="intro">
+  <p>Select the legal structure of your business to get the kit tailored for Alberta regulations and federal compliance.</p>
+</div>
+
+<section class="kits">
+  <div class="kit">
+    <h2>Sole Proprietorship</h2>
+    <p>Ideal for solo entrepreneurs and small businesses.</p>
+    <a href="startup-kit-alberta-sole-proprietorship.html">View Kit</a>
   </div>
-
-  <div class="section icons">
-    <div class="icon-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1121/1121093.png" alt="Registration">
-      <h3>Registration</h3>
-      <p>Step-by-step guide for Alberta incorporation.</p>
-    </div>
-    <div class="icon-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3106/3106990.png" alt="Tax Help">
-      <h3>Tax Numbers</h3>
-      <p>How to apply for GST/HST accounts.</p>
-    </div>
-    <div class="icon-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3461/3461665.png" alt="Grants">
-      <h3>Funding Help</h3>
-      <p>Grants and credits for Alberta startups.</p>
-    </div>
+  <div class="kit">
+    <h2>Partnership</h2>
+    <p>Designed for businesses with two or more owners sharing responsibility.</p>
+    <a href="startup-kit-alberta-partnership.html">View Kit</a>
   </div>
-
-  <div class="section testimonials">
-    <h2>What Our Alberta Users Say</h2>
-    <div class="testimonial">“Simple and clean breakdown. I saved hours!” – Connor R.</div>
-    <div class="testimonial">“I didn’t expect this to be so easy, but it was.” – Sarah L.</div>
+  <div class="kit">
+    <h2>Corporation</h2>
+    <p>Legal structure for incorporated businesses in Alberta.</p>
+    <a href="startup-kit-alberta-corporation.html">View Kit</a>
   </div>
+</section>
 
-  <footer>
-    More provinces coming soon | © 2025 BizKitVault
-  </footer>
+<footer>
+  &copy; 2025 BizKitVault.ca – All rights reserved.
+</footer>
 
-  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+<!-- Tidio Chatbot -->
+<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+
 </body>
 </html>
