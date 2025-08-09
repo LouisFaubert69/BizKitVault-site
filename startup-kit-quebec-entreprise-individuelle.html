@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Entreprise Individuelle - Québec Startup Kit</title>
+  <title>Entreprise individuelle - Kit de démarrage Québec | BizKitVault</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,96 +13,124 @@
       background-color: #f0f8ff;
       color: #333;
     }
-
     header {
-      background-color: #1E90FF;
+      background-color: #007BFF;
       color: white;
       padding: 20px;
       text-align: center;
     }
-
     h1 {
       margin: 0;
       font-size: 2rem;
     }
-
     .back-button {
       display: block;
       margin: 20px auto;
       text-align: center;
     }
-
     .back-button a {
       text-decoration: none;
-      color: #1E90FF;
+      color: #007BFF;
       font-weight: bold;
-      background-color: #e6f0ff;
+      background-color: #e0f0ff;
       padding: 10px 20px;
       border-radius: 8px;
       transition: background-color 0.3s;
-      white-space: nowrap;
       display: inline-block;
     }
-
     .back-button a:hover {
-      background-color: #cce0ff;
+      background-color: #c8e0ff;
     }
-
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
+    .kits {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .kit-box {
+      background-color: white;
+      border: 2px solid #007BFF;
+      border-radius: 15px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .kit-box:hover {
+      transform: translateY(-5px);
+    }
+    .kit-box img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .kit-box h2 {
+      font-size: 1.4rem;
+      color: #007BFF;
+      margin: 10px 0;
+    }
+    .kit-box p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .price-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .price {
+      font-size: 2rem;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .buy-button:hover {
+      background-color: #0056b3;
+    }
+    .instant-access {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .testimonials {
+      background-color: #ffffff;
       padding: 40px 20px;
       text-align: center;
     }
-
-    .content img {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 20px;
+    .testimonials h2 {
+      font-size: 1.8rem;
+      color: #007BFF;
+      margin-bottom: 30px;
     }
-
-    .content h2 {
-      font-size: 1.6rem;
-      color: #1E90FF;
-      margin-bottom: 20px;
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      font-style: italic;
+      color: #444;
     }
-
-    .content p {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
-
-    .price {
-      font-size: 1.4rem;
+    .testimonial-name {
       font-weight: bold;
-      color: #1E90FF;
-      margin: 20px 0;
+      color: #333;
+      margin-top: 5px;
     }
-
-    .purchase-button {
-      background-color: #1E90FF;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .purchase-button:hover {
-      background-color: #187bcd;
-    }
-
     footer {
-      background-color: #e6f0ff;
+      background-color: #e0f0ff;
       color: #333;
       text-align: center;
       padding: 15px;
       font-size: 0.9rem;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -113,16 +141,37 @@
   </header>
 
   <div class="back-button">
-    <a href="startup-kit-quebec.html">← Retour à la sélection du kit</a>
+    <a href="startup-kit-quebec.html">← Retour à la sélection des types d'entreprise</a>
   </div>
 
-  <div class="content">
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Entreprise Individuelle">
-    <h2>Démarrez votre entreprise individuelle au Québec</h2>
-    <p>Notre kit comprend toutes les informations, modèles et instructions nécessaires pour créer facilement votre entreprise individuelle au Québec. Idéal pour les entrepreneurs qui veulent démarrer rapidement et efficacement.</p>
-    <div class="price">Prix : 49 $ CAD</div>
-    <p><em>L’accès instantané au téléchargement sera accordé après l'achat.</em></p>
-    <button class="purchase-button">Acheter maintenant</button>
+  <div class="kits">
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Entreprise Individuelle">
+      <h2>Entreprise individuelle</h2>
+      <p>Forme d’entreprise la plus simple pour démarrer seul, avec un minimum de formalités administratives.</p>
+    </div>
+  </div>
+
+  <div class="price-section">
+    <div class="price">$49 CAD</div>
+    <a href="#" class="buy-button">Acheter maintenant</a>
+    <div class="instant-access">Accès instantané au téléchargement après l’achat.</div>
+  </div>
+
+  <div class="testimonials">
+    <h2>Ce que disent nos utilisateurs</h2>
+    <div class="testimonial">
+      "Ce kit m'a permis de démarrer mon entreprise rapidement et facilement."
+      <div class="testimonial-name">– Julie P., Montréal</div>
+    </div>
+    <div class="testimonial">
+      "Tout était clair et bien expliqué. Un outil indispensable!"
+      <div class="testimonial-name">– Marc L., Québec</div>
+    </div>
+    <div class="testimonial">
+      "Excellent rapport qualité-prix, je recommande à tous les nouveaux entrepreneurs."
+      <div class="testimonial-name">– Sophie R., Laval</div>
+    </div>
   </div>
 
   <footer>
