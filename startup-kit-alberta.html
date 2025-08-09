@@ -54,6 +54,8 @@
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
   }
   .kit-box:hover {
     transform: translateY(-10px);
@@ -74,12 +76,6 @@
   .kit-desc {
     font-size: 1rem;
     color: #444;
-    margin-bottom: 1rem;
-  }
-  .kit-price {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #007f5f;
   }
   footer {
     background-color: #004733;
@@ -89,7 +85,6 @@
     font-size: 0.9rem;
     letter-spacing: 0.7px;
   }
-  /* Responsive */
   @media (max-width: 650px) {
     .kits {
       flex-direction: column;
@@ -114,21 +109,18 @@
       <svg class="kit-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4C18.745 4 8 14.745 8 28c0 10.493 8.507 19 19 19 11.046 0 20-8.954 20-20 0-13.255-10.745-24-24-24zm0 34a14 14 0 1 1 0-28 14 14 0 0 1 0 28z"/></svg>
       <div class="kit-title">Sole Proprietorship</div>
       <div class="kit-desc">Start your own business as a sole owner. Easy registration and legal essentials.</div>
-      <div class="kit-price">$49 CAD</div>
     </a>
 
     <a href="startup-kit-alberta-partnership.html" class="kit-box" aria-label="Partnership Kit">
       <svg class="kit-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M46 20H18c-2.209 0-4 1.791-4 4v16c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4zm-1 13H19v-2h26v2zm0-5H19v-2h26v2z"/></svg>
       <div class="kit-title">Partnership</div>
       <div class="kit-desc">Form your partnership with legal contracts and registrations made easy.</div>
-      <div class="kit-price">$59 CAD</div>
     </a>
 
     <a href="startup-kit-alberta-corporation.html" class="kit-box" aria-label="Incorporation Kit">
       <svg class="kit-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M46 6H18c-2.209 0-4 1.791-4 4v44c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V10c0-2.209-1.791-4-4-4zm-7 38H25v-4h14v4zm0-8H25v-4h14v4zm0-8H25v-4h14v4z"/></svg>
       <div class="kit-title">Incorporation</div>
       <div class="kit-desc">Incorporate your business with professional documents and registration guides.</div>
-      <div class="kit-price">$79 CAD</div>
     </a>
   </div>
 </main>
