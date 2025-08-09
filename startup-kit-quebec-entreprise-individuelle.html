@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Entreprise Individuelle - Québec - BizKitVault</title>
+  <title>Entreprise Individuelle - Québec Startup Kit</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -27,91 +27,61 @@
     }
 
     .back-button {
-      display: flex;
-      justify-content: center;
+      display: block;
       margin: 20px auto;
-      max-width: 95%;
+      text-align: center;
     }
 
     .back-button a {
       text-decoration: none;
       color: #1E90FF;
       font-weight: bold;
-      background-color: #e0f0ff;
+      background-color: #e6f0ff;
       padding: 10px 20px;
       border-radius: 8px;
-      text-align: center;
-      white-space: normal;
-      line-height: 1.4;
+      transition: background-color 0.3s;
+      white-space: nowrap;
       display: inline-block;
     }
 
-    .container {
-      padding: 20px;
-      max-width: 900px;
+    .back-button a:hover {
+      background-color: #cce0ff;
+    }
+
+    .content {
+      max-width: 800px;
       margin: 0 auto;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .section h2 {
-      color: #1E90FF;
-      margin-bottom: 15px;
-    }
-
-    .section p {
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .icons {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .icon-box {
-      background-color: white;
-      border: 2px solid #1E90FF;
-      border-radius: 15px;
-      padding: 20px;
-      width: 200px;
+      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
     }
 
-    .icon-box:hover {
-      transform: translateY(-5px);
+    .content img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
     }
 
-    .icon-box img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 10px;
-    }
-
-    .icon-box h3 {
-      font-size: 1.1rem;
+    .content h2 {
+      font-size: 1.6rem;
       color: #1E90FF;
-      margin: 10px 0;
+      margin-bottom: 20px;
     }
 
-    .icon-box p {
-      font-size: 0.9rem;
+    .content p {
+      font-size: 1rem;
       color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
 
-    .payment {
-      text-align: center;
-      margin: 40px 0;
+    .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #1E90FF;
+      margin: 20px 0;
     }
 
-    .payment button {
+    .purchase-button {
       background-color: #1E90FF;
       color: white;
       border: none;
@@ -122,47 +92,17 @@
       transition: background-color 0.3s;
     }
 
-    .payment button:hover {
+    .purchase-button:hover {
       background-color: #187bcd;
     }
 
-    .payment-note {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 10px;
-    }
-
-    .testimonials {
-      background-color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .testimonials h2 {
-      font-size: 1.8rem;
-      color: #1E90FF;
-      margin-bottom: 30px;
-    }
-
-    .testimonial {
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-      font-style: italic;
-      color: #444;
-    }
-
-    .testimonial-name {
-      font-weight: bold;
-      color: #333;
-      margin-top: 5px;
-    }
-
     footer {
-      background-color: #e0f0ff;
+      background-color: #e6f0ff;
       color: #333;
       text-align: center;
       padding: 15px;
       font-size: 0.9rem;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -173,56 +113,16 @@
   </header>
 
   <div class="back-button">
-    <a href="startup-kit-quebec.html">← Retour aux trousses de démarrage du Québec</a>
+    <a href="startup-kit-quebec.html">← Retour à la sélection du kit</a>
   </div>
 
-  <div class="container">
-    <div class="section">
-      <h2>À propos de l’entreprise individuelle</h2>
-      <p>L’entreprise individuelle est la forme juridique la plus simple pour démarrer une entreprise au Québec. Elle convient particulièrement aux entrepreneurs travaillant seuls et désirant garder le contrôle total de leurs activités.</p>
-    </div>
-
-    <div class="section">
-      <h2>Ce que comprend cette trousse</h2>
-      <div class="icons">
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Plan d'affaires">
-          <h3>Plan d'affaires</h3>
-          <p>Modèle professionnel pour structurer vos idées et stratégies.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="Checklist">
-          <h3>Checklist</h3>
-          <p>Liste complète des étapes pour enregistrer votre entreprise.</p>
-        </div>
-        <div class="icon-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/2830/2830330.png" alt="Ressources">
-          <h3>Ressources</h3>
-          <p>Guides et liens utiles adaptés au Québec.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="payment">
-      <button>Acheter maintenant - 29,99 $</button>
-      <div class="payment-note">L'accès instantané au téléchargement sera accordé après l'achat.</div>
-    </div>
-  </div>
-
-  <div class="testimonials">
-    <h2>Ce que disent les utilisateurs</h2>
-    <div class="testimonial">
-      "Un guide clair et complet pour lancer mon entreprise rapidement."
-      <div class="testimonial-name">– Marie L., Montréal</div>
-    </div>
-    <div class="testimonial">
-      "Exactement ce qu'il me fallait pour comprendre les démarches au Québec."
-      <div class="testimonial-name">– Jean D., Québec</div>
-    </div>
-    <div class="testimonial">
-      "Très pratique et bien structuré. Je recommande fortement."
-      <div class="testimonial-name">– Sophie T., Laval</div>
-    </div>
+  <div class="content">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Entreprise Individuelle">
+    <h2>Démarrez votre entreprise individuelle au Québec</h2>
+    <p>Notre kit comprend toutes les informations, modèles et instructions nécessaires pour créer facilement votre entreprise individuelle au Québec. Idéal pour les entrepreneurs qui veulent démarrer rapidement et efficacement.</p>
+    <div class="price">Prix : 49 $ CAD</div>
+    <p><em>L’accès instantané au téléchargement sera accordé après l'achat.</em></p>
+    <button class="purchase-button">Acheter maintenant</button>
   </div>
 
   <footer>
