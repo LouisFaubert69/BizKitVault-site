@@ -2,119 +2,88 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Société par Actions – Québec</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Société par actions - Trousse Québec | BizKitVault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fdfdfd;
-    }
-    header {
-      background-color: #8B0000;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    .content h2 {
-      color: #8B0000;
-      margin-top: 2rem;
-    }
-    .content ul {
-      list-style: none;
-      padding: 0;
-    }
-    .content ul li {
-      margin-bottom: 1rem;
-      padding-left: 1.5rem;
-      position: relative;
-    }
-    .content ul li::before {
-      content: "✔";
-      color: green;
-      position: absolute;
-      left: 0;
-    }
-    .price {
-      margin-top: 2rem;
-      background: #ffecec;
-      padding: 1.5rem;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .price h3 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: #8B0000;
-    }
-    .price p {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-    }
-    .buy-button {
-      margin-top: 1rem;
-      background-color: #8B0000;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .buy-button:hover {
-      background-color: #a10000;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.85rem;
-      color: #555;
-    }
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #f0f8ff; color: #333; }
+    header { background-color: #007BFF; color: white; padding: 20px; text-align: center; }
+    .back-link { display: block; max-width: 1100px; margin: 18px auto; text-align: left; padding-left: 16px; }
+    .back-link a { color: #007BFF; text-decoration: none; font-weight: 600; background: #eaf4ff; padding: 8px 14px; border-radius: 8px; display: inline-block; line-height: 1.2; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .section-title { text-align: center; font-size: 1.6rem; margin-bottom: 14px; color: #007BFF; }
+    .kit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; margin-top: 18px; }
+    .kit-card { background: #fff; border-radius: 12px; padding: 22px; box-shadow: 0 6px 18px rgba(0,0,0,0.07); text-align: center; border: 2px solid rgba(0,123,255,0.08); transition: transform .22s ease; }
+    .kit-card:hover { transform: translateY(-6px); }
+    .kit-card img { width: 72px; height: 72px; object-fit: contain; margin-bottom: 12px; }
+    .kit-card h3 { margin: 8px 0; color: #007BFF; font-size: 1.1rem; }
+    .kit-card p { color: #444; font-size: 0.97rem; margin: 6px 0 0; }
+    .price-box { background: #ffffff; margin: 34px auto 10px; padding: 28px; border-radius: 12px; text-align: center; max-width: 520px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); border: 2px solid rgba(0,123,255,0.06); }
+    .price-box h2 { color: #007BFF; margin: 0 0 8px; font-size: 1.4rem; }
+    .price-amount { font-size: 2.1rem; color: #007BFF; font-weight: 700; margin: 10px 0; }
+    .instant-note { color: #666; font-size: 0.95rem; margin-top: 8px; }
+    .buy-btn { display: inline-block; margin-top: 14px; background-color: #007BFF; color: #fff; padding: 12px 26px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    .buy-btn:hover { background-color: #005fcc; }
+    .testimonials { margin-top: 34px; padding: 28px 12px; text-align: center; }
+    .testimonials h3 { color: #007BFF; margin-bottom: 18px; font-size: 1.3rem; }
+    .testimonial { max-width: 820px; margin: 12px auto; font-style: italic; color: #333; }
+    footer { margin-top: 42px; background-color: #007BFF; color: white; text-align: center; padding: 16px; font-size: 0.95rem; }
+    @media (max-width: 520px) { .back-link { padding-left: 10px; text-align: center; } .back-link a { white-space: normal; } }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Société par Actions – Québec</h1>
-</header>
+  <header>
+    <h1>Société par actions - Trousse Québec</h1>
+  </header>
 
-<div class="content">
-  <p>La trousse de démarrage pour une société par actions comprend :</p>
-  <ul>
-    <li>Guide pour immatriculer une société par actions au Québec</li>
-    <li>Modèle de statuts constitutifs</li>
-    <li>Règlements internes personnalisables</li>
-    <li>Checklist des exigences fiscales et licences provinciales</li>
-    <li>Modèles de procès-verbaux et résolutions</li>
-  </ul>
-
-  <div class="price">
-    <h3>Prix : 99,99$ CAD</h3>
-    <p>Téléchargement immédiat après le paiement.</p>
-    <a href="#" class="buy-button">Ajouter au panier</a>
+  <div class="back-link">
+    <a href="startup-kit-quebec.html">← Retour aux trousses de démarrage du Québec</a>
   </div>
-</div>
 
-<footer>
-  &copy; 2025 BizKitVault.ca – Tous droits réservés
-</footer>
+  <main class="container">
+    <h2 class="section-title">Ce que contient la trousse</h2>
 
-<!-- Tidio Chatbot -->
-<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+    <div class="kit-grid" aria-live="polite">
+      <div class="kit-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Incorporation">
+        <h3>Guide d'incorporation</h3>
+        <p>Étapes pour incorporer au niveau provincial ou fédéral, avec modèles nécessaires.</p>
+      </div>
 
+      <div class="kit-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Statuts et règlements">
+        <h3>Statuts & règlements</h3>
+        <p>Modèles de statuts, règlements administratifs et résolutions pour administrateurs.</p>
+      </div>
+
+      <div class="kit-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Conformité">
+        <h3>Conformité & gouvernance</h3>
+        <p>Feuilles de route pour l'obligation annuelle, tenue des registres et rapports.</p>
+      </div>
+    </div>
+
+    <div class="price-box" role="region" aria-label="Pricing">
+      <h2>Prix de la trousse</h2>
+      <div class="price-amount">$79 CAD</div>
+      <div class="instant-note">Accès instantané au téléchargement après l’achat.</div>
+      <a class="buy-btn" href="#">Acheter maintenant</a>
+    </div>
+
+    <section class="testimonials" aria-label="Témoignages">
+      <h3>Ce que disent nos utilisateurs</h3>
+      <div class="testimonial">« Tout ce qu’il faut pour incorporer correctement et garder sa conformité. »<br><strong>– Daniel W., Montréal</strong></div>
+      <div class="testimonial">« Les statuts étaient prêts à l’emploi et parfaitement adaptés au Québec. »<br><strong>– Sophie L., Québec</strong></div>
+      <div class="testimonial">« Un guide complet pour la gouvernance et les obligations annuelles. »<br><strong>– Liam R., Laval</strong></div>
+    </section>
+  </main>
+
+  <footer>
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
+  </footer>
+
+  <!-- Tidio Chatbot -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
