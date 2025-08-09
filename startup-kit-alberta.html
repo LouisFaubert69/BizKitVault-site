@@ -77,6 +77,39 @@
     font-size: 1rem;
     color: #444;
   }
+  section.testimonials {
+    max-width: 900px;
+    margin: 3rem auto 2rem;
+    padding: 0 1rem;
+  }
+  section.testimonials h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #007f5f;
+    margin-bottom: 1rem;
+  }
+  .testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    justify-content: center;
+  }
+  .testimonial {
+    background: white;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 260px;
+    font-style: italic;
+    color: #333;
+  }
+  .testimonial strong {
+    display: block;
+    margin-top: 0.8rem;
+    text-align: right;
+    font-weight: 700;
+    color: #004733;
+  }
   footer {
     background-color: #004733;
     color: #ddd;
@@ -91,6 +124,13 @@
       align-items: center;
     }
     .kit-box {
+      width: 90%;
+    }
+    .testimonial-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .testimonial {
       width: 90%;
     }
   }
@@ -124,6 +164,24 @@
     </a>
   </div>
 </main>
+
+<section class="testimonials" aria-label="Customer testimonials">
+  <h2>What Alberta Entrepreneurs Say</h2>
+  <div class="testimonial-list">
+    <blockquote class="testimonial">
+      "The Alberta sole proprietorship kit made registering my business a breeze. Clear, practical, and all in one place!"<br />
+      <strong>— Sarah, Calgary</strong>
+    </blockquote>
+    <blockquote class="testimonial">
+      "Highly recommend! The legal templates saved me time and gave me peace of mind starting out in Edmonton."<br />
+      <strong>— Mark, Edmonton</strong>
+    </blockquote>
+    <blockquote class="testimonial">
+      "Great value for money, especially for someone new to business like me in Red Deer."<br />
+      <strong>— Olivia, Red Deer</strong>
+    </blockquote>
+  </div>
+</section>
 
 <footer>
   2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
