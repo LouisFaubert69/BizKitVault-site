@@ -1,217 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Alberta Startup Kit | BizKitVault</title>
-<style>
-  body, h1, h2, p, ul, li, a {
-    margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body {
-    background: #e8f0f2;
-    color: #1a1a1a;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  header {
-    background-color: #007f5f;
-    color: white;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  }
-  header h1 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-  }
-  header p {
-    font-size: 1rem;
-    margin-top: 0.3rem;
-    font-style: italic;
-  }
-  /* Back link container below header */
-  .back-link-container {
-    max-width: 900px;
-    margin: 1rem auto 0;
-    padding: 0 1rem;
-    text-align: left;
-  }
-  .back-link {
-    color: #007f5f;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  .back-link:hover,
-  .back-link:focus {
-    border-color: #004733;
-  }
-  main {
-    flex: 1;
-    max-width: 900px;
-    margin: 1rem auto 2rem;
-    padding: 0 1rem;
-  }
-  .kits {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .kit-box {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-    width: 280px;
-    cursor: pointer;
-    text-align: center;
-    transition: transform 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-  }
-  .kit-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  }
-  .kit-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1rem;
-    fill: #007f5f;
-  }
-  .kit-title {
-    font-weight: 700;
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
-    color: #004733;
-  }
-  .kit-desc {
-    font-size: 1rem;
-    color: #444;
-  }
-  section.testimonials {
-    max-width: 900px;
-    margin: 3rem auto 2rem;
-    padding: 0 1rem;
-  }
-  section.testimonials h2 {
-    text-align: center;
-    font-weight: 700;
-    color: #007f5f;
-    margin-bottom: 1rem;
-  }
-  .testimonial-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.8rem;
-    justify-content: center;
-  }
-  .testimonial {
-    background: white;
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 260px;
-    font-style: italic;
-    color: #333;
-  }
-  .testimonial strong {
-    display: block;
-    margin-top: 0.8rem;
-    text-align: right;
-    font-weight: 700;
-    color: #004733;
-  }
-  footer {
-    background-color: #004733;
-    color: #ddd;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.7px;
-  }
-  @media (max-width: 650px) {
-    .kits {
-      flex-direction: column;
-      align-items: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberta Startup Kits</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
     }
-    .kit-box {
-      width: 90%;
+    header {
+      background-color: #ff9800; /* Alberta orange */
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      background: #fff3e0;
+      padding: 0.8rem;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #ff9800;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .kit-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .kit {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .kit h3 {
+      margin-top: 0;
+      color: #ff9800;
+    }
+    .kit a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #ff9800;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Testimonials */
+    section.testimonials {
+      max-width: 900px;
+      margin: 3rem auto 2rem;
+      padding: 0 1rem;
+    }
+    section.testimonials h2 {
+      text-align: center;
+      font-weight: 700;
+      color: #ff9800;
+      margin-bottom: 1rem;
     }
     .testimonial-list {
-      flex-direction: column;
-      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem 1.5rem;
+      justify-content: center;
     }
     .testimonial {
-      width: 90%;
+      background: white;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      font-style: italic;
+      color: #333;
     }
-  }
-</style>
+    .testimonial strong {
+      display: block;
+      margin-top: 0.8rem;
+      text-align: right;
+      font-weight: 700;
+      color: #ff9800;
+    }
+    footer {
+      background-color: #004733;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Alberta Startup Kit</h1>
-  <p>Your complete starter package for launching your business in Alberta</p>
-</header>
+  <header>
+    <h1>Alberta Startup Kits</h1>
+  </header>
 
-<div class="back-link-container">
-  <a href="startup-kit.html" class="back-link" aria-label="Back to province selection">← Back to Province Selection</a>
-</div>
+  <!-- Back to province selection -->
+  <a href="/startup-kits.html" class="back-link">← Back to Province Selection</a>
 
-<main>
-  <div class="kits">
-    <a href="startup-kit-alberta-sole-proprietorship.html" class="kit-box" aria-label="Sole Proprietorship Kit">
-      <svg class="kit-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4C18.745 4 8 14.745 8 28c0 10.493 8.507 19 19 19 11.046 0 20-8.954 20-20 0-13.255-10.745-24-24-24zm0 34a14 14 0 1 1 0-28 14 14 0 0 1 0 28z"/></svg>
-      <div class="kit-title">Sole Proprietorship</div>
-      <div class="kit-desc">Start your own business as a sole owner. Easy registration and legal essentials.</div>
-    </a>
-
-    <a href="startup-kit-alberta-partnership.html" class="kit-box" aria-label="Partnership Kit">
-      <svg class="kit-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M46 20H18c-2.209 0-4 1.791-4 4v16c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4zm-1 13H19v-2h26v2zm0-5H19v-2h26v2z"/></svg>
-      <div class="kit-title">Partnership</div>
-      <div class="kit-desc">Form your partnership with legal contracts and registrations made easy.</div>
-    </a>
-
-    <a href="startup-kit-alberta-corporation.html" class="kit-box" aria-label="Incorporation Kit">
-      <svg class="kit-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M46 6H18c-2.209 0-4 1.791-4 4v44c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V10c0-2.209-1.791-4-4-4zm-7 38H25v-4h14v4zm0-8H25v-4h14v4zm0-8H25v-4h14v4z"/></svg>
-      <div class="kit-title">Incorporation</div>
-      <div class="kit-desc">Incorporate your business with professional documents and registration guides.</div>
-    </a>
+  <div class="container">
+    <div class="kit-options">
+      <div class="kit">
+        <h3>Sole Proprietorship</h3>
+        <p>Everything you need to start your sole proprietorship in Alberta.</p>
+        <a href="startup-kit-alberta-sole-proprietorship.html">View Kit</a>
+      </div>
+      <div class="kit">
+        <h3>Partnership</h3>
+        <p>Complete toolkit for registering and running a partnership in Alberta.</p>
+        <a href="startup-kit-alberta-partnership.html">View Kit</a>
+      </div>
+      <div class="kit">
+        <h3>Incorporation</h3>
+        <p>Step-by-step incorporation package for Alberta entrepreneurs.</p>
+        <a href="startup-kit-alberta-incorporation.html">View Kit</a>
+      </div>
+    </div>
   </div>
-</main>
 
-<section class="testimonials" aria-label="Customer testimonials">
-  <h2>What Alberta Entrepreneurs Say</h2>
-  <div class="testimonial-list">
-    <blockquote class="testimonial">
-      "The Alberta sole proprietorship kit made registering my business a breeze. Clear, practical, and all in one place!"<br />
-      <strong>— Sarah, Calgary</strong>
-    </blockquote>
-    <blockquote class="testimonial">
-      "Highly recommend! The legal templates saved me time and gave me peace of mind starting out in Edmonton."<br />
-      <strong>— Mark, Edmonton</strong>
-    </blockquote>
-    <blockquote class="testimonial">
-      "Great value for money, especially for someone new to business like me in Red Deer."<br />
-      <strong>— Olivia, Red Deer</strong>
-    </blockquote>
-  </div>
-</section>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Alberta Entrepreneurs Say</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        "The Alberta sole proprietorship kit made registering my business a breeze. Clear, practical, and all in one place!"
+        <strong>— Sarah, Calgary</strong>
+      </div>
+      <div class="testimonial">
+        "Highly recommend! The legal templates saved me time and gave me peace of mind starting out in Edmonton."
+        <strong>— Mark, Edmonton</strong>
+      </div>
+      <div class="testimonial">
+        "Great value for money, especially for someone new to business like me in Red Deer."
+        <strong>— Olivia, Red Deer</strong>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
-</footer>
-
-<!-- Tidio Chatbot -->
-<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+  <footer>
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
+  </footer>
 
 </body>
 </html>
