@@ -4,159 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alberta Startup Kits</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-    }
-    header {
-      background-color: #ff9800; /* Alberta orange */
-      color: white;
-      text-align: center;
-      padding: 1.5rem 0;
-    }
-    header h1 {
-      margin: 0;
-    }
-    .back-link {
-      display: block;
-      text-align: center;
-      background: #fff3e0;
-      padding: 0.8rem;
-      font-size: 1rem;
-      text-decoration: none;
-      color: #ff9800;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .kit-options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: center;
-    }
-    .kit {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      width: 280px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .kit h3 {
-      margin-top: 0;
-      color: #ff9800;
-    }
-    .kit a {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #ff9800;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    /* Testimonials */
-    section.testimonials {
-      max-width: 900px;
-      margin: 3rem auto 2rem;
-      padding: 0 1rem;
-    }
-    section.testimonials h2 {
-      text-align: center;
-      font-weight: 700;
-      color: #ff9800;
-      margin-bottom: 1rem;
-    }
-    .testimonial-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem 1.5rem;
-      justify-content: center;
-    }
-    .testimonial {
-      background: white;
-      padding: 1rem 1.2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 280px;
-      font-style: italic;
+      background-color: #fff;
       color: #333;
     }
-    .testimonial strong {
-      display: block;
-      margin-top: 0.8rem;
-      text-align: right;
-      font-weight: 700;
-      color: #ff9800;
-    }
-    footer {
-      background-color: #004733;
+
+    header.alberta {
+      background-color: #ff9800; /* Alberta Orange */
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 1rem 0;
-      font-size: 0.9rem;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .back-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #ffe0b2;
+      color: #ff9800;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      border: 2px solid #ff9800;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #ff9800;
+      margin-bottom: 10px;
+    }
+
+    .comments {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .comment {
+      max-width: 600px;
+      margin: 20px auto;
+      font-style: italic;
+    }
+
+    .comment-author {
+      margin-top: 5px;
+      font-weight: bold;
+      color: #ff9800;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Alberta Startup Kits</h1>
+  <header class="alberta">
+    Alberta Startup Kits
   </header>
 
-  <!-- Back to province selection -->
-  <a href="/startup-kits.html" class="back-link">← Back to Province Selection</a>
+  <a href="province-selection.html" class="back-button">&larr; Back to Province Selection</a>
 
   <div class="container">
-    <div class="kit-options">
-      <div class="kit">
-        <h3>Sole Proprietorship</h3>
-        <p>Everything you need to start your sole proprietorship in Alberta.</p>
-        <a href="startup-kit-alberta-sole-proprietorship.html">View Kit</a>
-      </div>
-      <div class="kit">
-        <h3>Partnership</h3>
-        <p>Complete toolkit for registering and running a partnership in Alberta.</p>
-        <a href="startup-kit-alberta-partnership.html">View Kit</a>
-      </div>
-      <div class="kit">
-        <h3>Incorporation</h3>
-        <p>Step-by-step incorporation package for Alberta entrepreneurs.</p>
-        <a href="startup-kit-alberta-incorporation.html">View Kit</a>
-      </div>
+    <div class="card">
+      <img src="images/sole-icon.png" alt="Sole Proprietorship Icon">
+      <h2>Sole Proprietorship</h2>
+      <p>Simple and cost-effective way to start a business alone.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/partnership-icon.png" alt="Partnership Icon">
+      <h2>Partnership</h2>
+      <p>Start a business with one or more partners easily and legally.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/incorporation-icon.png" alt="Incorporation Icon">
+      <h2>Incorporation</h2>
+      <p>Form a corporation to separate yourself legally from your business.</p>
     </div>
   </div>
 
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>What Alberta Entrepreneurs Say</h2>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        "The Alberta sole proprietorship kit made registering my business a breeze. Clear, practical, and all in one place!"
-        <strong>— Sarah, Calgary</strong>
-      </div>
-      <div class="testimonial">
-        "Highly recommend! The legal templates saved me time and gave me peace of mind starting out in Edmonton."
-        <strong>— Mark, Edmonton</strong>
-      </div>
-      <div class="testimonial">
-        "Great value for money, especially for someone new to business like me in Red Deer."
-        <strong>— Olivia, Red Deer</strong>
-      </div>
-    </div>
-  </section>
+  <div class="comments">
+    <h2>What Users Are Saying</h2>
 
-  <footer>
-    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
-  </footer>
+    <div class="comment">
+      "This kit made it so easy to start my business."
+      <div class="comment-author">Sarah, AB</div>
+    </div>
+
+    <div class="comment">
+      "Everything I needed was right here. Highly recommend."
+      <div class="comment-author">Mike, AB</div>
+    </div>
+
+    <div class="comment">
+      "Clear instructions and great value for the price."
+      <div class="comment-author">Emma, AB</div>
+    </div>
+  </div>
 
 </body>
 </html>
