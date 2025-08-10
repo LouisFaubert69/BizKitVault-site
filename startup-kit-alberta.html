@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alberta Startup Kit - BizKitVault</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>Alberta Startup Kits</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fff8f0;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0; /* light orange-ish */
+      color: #d35400; /* orange */
     }
 
     header {
-      background-color: #ff9800; /* Orange */
+      background-color: #d35400; /* strong orange */
       color: white;
       padding: 20px;
       text-align: center;
@@ -23,156 +22,98 @@
 
     h1 {
       margin: 0;
-      font-size: 2rem;
     }
 
-    .back-button {
-      display: block;
-      margin: 20px auto;
-      text-align: center;
-    }
-
-    .back-button a {
-      text-decoration: none;
-      color: #ff9800;
-      font-weight: bold;
-      background-color: #fff0e0;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-
-    .back-button a:hover {
-      background-color: #ffd6a1;
-    }
-
-    .kits {
+    .kits-container {
       display: flex;
       justify-content: center;
+      gap: 30px;
       flex-wrap: wrap;
-      gap: 20px;
       padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .kit-box {
       background-color: white;
-      border: 2px solid #ff9800;
-      border-radius: 15px;
-      padding: 30px;
-      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(211, 84, 0, 0.3);
+      padding: 25px;
+      flex: 1 1 300px;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
       cursor: pointer;
-      transition: transform 0.3s;
+      color: #d35400;
+      text-decoration: none;
+      border: 2px solid transparent;
     }
 
     .kit-box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      border-color: #e67e22;
+      box-shadow: 0 8px 20px rgba(230, 126, 34, 0.5);
     }
 
-    .kit-box img {
-      width: 80px;
-      height: 80px;
+    .kit-icon {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 20px;
+    }
+
+    .kit-title {
+      font-size: 24px;
       margin-bottom: 15px;
     }
 
-    .kit-box h2 {
-      font-size: 1.4rem;
-      color: #ff9800;
-      margin: 10px 0;
-    }
-
-    .kit-box p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .testimonials {
-      background-color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .testimonials h2 {
-      font-size: 1.8rem;
-      color: #ff9800;
-      margin-bottom: 30px;
-    }
-
-    .testimonial {
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-      font-style: italic;
-      color: #444;
-    }
-
-    .testimonial-name {
-      font-weight: bold;
-      color: #333;
-      margin-top: 5px;
+    .kit-desc {
+      font-size: 16px;
+      color: #6e2c00;
+      margin-bottom: 20px;
+      min-height: 75px;
     }
 
     footer {
-      background-color: #fff0e0;
-      color: #333;
+      background-color: #d35400;
+      color: white;
       text-align: center;
       padding: 15px;
-      font-size: 0.9rem;
+      font-size: 14px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Alberta Startup Kits</h1>
   </header>
 
-  <div class="back-button">
-    <a href="startup-kit.html">← Back to Province Selection</a>
-  </div>
+  <main>
+    <div class="kits-container">
+      <a href="startup-kit-alberta-sole-proprietorship.html" class="kit-box" aria-label="Alberta Sole Proprietorship Kit">
+        <img class="kit-icon" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Sole Proprietorship Icon" />
+        <div class="kit-title">Sole Proprietorship</div>
+        <div class="kit-desc">Get everything you need to register and start your sole proprietorship in Alberta.</div>
+      </a>
 
-  <div class="kits">
-    <div class="kit-box" onclick="location.href='startup-kit-alberta-sole-proprietor.html'">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Sole Proprietorship">
-      <h2>Sole Proprietorship</h2>
-      <p>Simple and cost-effective way to start a business alone.</p>
-    </div>
+      <a href="startup-kit-alberta-partnership.html" class="kit-box" aria-label="Alberta Partnership Kit">
+        <img class="kit-icon" src="https://cdn-icons-png.flaticon.com/512/1496/1496792.png" alt="Partnership Icon" />
+        <div class="kit-title">Partnership</div>
+        <div class="kit-desc">Tools and templates for forming and managing your Alberta business partnership.</div>
+      </a>
 
-    <div class="kit-box" onclick="location.href='startup-kit-alberta-partnership.html'">
-      <img src="https://cdn-icons-png.flaticon.com/512/3815/3815445.png" alt="Partnership">
-      <h2>Partnership</h2>
-      <p>Start a business with one or more partners easily and legally.</p>
+      <a href="startup-kit-alberta-corporation.html" class="kit-box" aria-label="Alberta Corporation Kit">
+        <img class="kit-icon" src="https://cdn-icons-png.flaticon.com/512/686/686308.png" alt="Corporation Icon" />
+        <div class="kit-title">Corporation</div>
+        <div class="kit-desc">Complete kit for incorporating and running your Alberta corporation smoothly.</div>
+      </a>
     </div>
-
-    <div class="kit-box" onclick="location.href='startup-kit-alberta-corporation.html'">
-      <img src="https://cdn-icons-png.flaticon.com/512/2907/2907253.png" alt="Corporation">
-      <h2>Corporation</h2>
-      <p>Incorporate your business for legal protection and growth.</p>
-    </div>
-  </div>
-
-  <div class="testimonials">
-    <h2>What Users Are Saying</h2>
-    <div class="testimonial">
-      "This kit made it so easy to launch my small business. Everything was clear and organized!"
-      <div class="testimonial-name">– Sarah M., AB</div>
-    </div>
-    <div class="testimonial">
-      "I had no idea where to start, but the Alberta Startup Kit walked me through every step."
-      <div class="testimonial-name">– Jason R., AB</div>
-    </div>
-    <div class="testimonial">
-      "Great value and exactly what I needed. Highly recommend to any new entrepreneur."
-      <div class="testimonial-name">– Priya S., AB</div>
-    </div>
-  </div>
+  </main>
 
   <footer>
     2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
   </footer>
 
-  <!-- ✅ Tidio Chatbot Script -->
+  <!-- Tidio Chatbot -->
   <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
-
 </body>
 </html>
