@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alberta Startup Kits</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff8f0; /* light orange-ish */
-      color: #d35400; /* orange */
+      background-color: #fff8f0;
+      color: #d35400;
     }
 
     header {
-      background-color: #d35400; /* strong orange */
+      background-color: #ff9800; /* orange */
       color: white;
       padding: 20px;
       text-align: center;
@@ -22,6 +22,34 @@
 
     h1 {
       margin: 0;
+    }
+
+    .return-box {
+      margin: 15px auto;
+      max-width: 400px;
+      background-color: #ffe0b2;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      font-size: 16px;
+      color: #d35400;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .return-box a {
+      color: #d35400;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .return-box a:hover {
+      text-decoration: underline;
     }
 
     .kits-container {
@@ -37,7 +65,7 @@
     .kit-box {
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(211, 84, 0, 0.3);
+      box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
       padding: 25px;
       flex: 1 1 300px;
       text-align: center;
@@ -50,8 +78,8 @@
 
     .kit-box:hover {
       transform: translateY(-8px);
-      border-color: #e67e22;
-      box-shadow: 0 8px 20px rgba(230, 126, 34, 0.5);
+      border-color: #fb8c00;
+      box-shadow: 0 8px 20px rgba(251, 140, 0, 0.5);
     }
 
     .kit-icon {
@@ -72,8 +100,33 @@
       min-height: 75px;
     }
 
+    /* Testimonials section */
+    .testimonial-section {
+      padding: 40px 20px;
+      background-color: #fff4e5;
+      max-width: 900px;
+      margin: 50px auto 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+      text-align: center;
+      color: #663300;
+    }
+
+    .testimonial-section h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: 20px auto;
+      font-style: italic;
+      color: #663300;
+      font-size: 18px;
+    }
+
     footer {
-      background-color: #d35400;
+      background-color: #ff9800;
       color: white;
       text-align: center;
       padding: 15px;
@@ -86,6 +139,12 @@
   <header>
     <h1>Alberta Startup Kits</h1>
   </header>
+
+  <div class="return-box">
+    <a href="index.html">
+      <i class="fas fa-arrow-left"></i> Return to Provinces Selection
+    </a>
+  </div>
 
   <main>
     <div class="kits-container">
@@ -107,6 +166,13 @@
         <div class="kit-desc">Complete kit for incorporating and running your Alberta corporation smoothly.</div>
       </a>
     </div>
+
+    <section class="testimonial-section">
+      <h2>What Users Are Saying</h2>
+      <div class="testimonial">“This kit made starting my Alberta business straightforward and simple.” — Liam M., Calgary</div>
+      <div class="testimonial">“Easy to understand and very helpful for new entrepreneurs.” — Maya D., Edmonton</div>
+      <div class="testimonial">“I recommend these kits to all my friends starting businesses.” — Ryan C., Red Deer</div>
+    </section>
   </main>
 
   <footer>
