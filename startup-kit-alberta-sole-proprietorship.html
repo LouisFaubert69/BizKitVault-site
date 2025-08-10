@@ -1,258 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Alberta Startup Kit - Sole Proprietorship | BizKitVault</title>
-<style>
-  /* Reset */
-  body, h1, h2, h3, p, ul, li, a, button {
-    margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body {
-    background: #e8f0f2;
-    color: #1a1a1a;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  header {
-    background-color: #007f5f; /* Alberta green */
-    color: white;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  }
-  header h1 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-  }
-  header p {
-    font-size: 1rem;
-    margin-top: 0.3rem;
-    font-style: italic;
-  }
-  main {
-    flex: 1;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  .icon-section {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-  }
-  .icon-box {
-    background: white;
-    border-radius: 12px;
-    padding: 1.2rem;
-    width: 180px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-    cursor: default;
-  }
-  .icon-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-  }
-  .icon-box svg {
-    width: 48px;
-    height: 48px;
-    fill: #007f5f;
-    margin-bottom: 0.8rem;
-  }
-  .icon-box h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #004733;
-  }
-  .icon-box p {
-    font-size: 0.9rem;
-    color: #444;
-  }
-  section.description {
-    background: white;
-    padding: 1.5rem 2rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
-  }
-  section.description h2 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #007f5f;
-  }
-  section.description p {
-    font-size: 1rem;
-    color: #222;
-  }
-  section.pricing {
-    background: #007f5f;
-    color: white;
-    padding: 2rem 1.5rem;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,127,95,0.4);
-  }
-  section.pricing h2 {
-    font-size: 1.7rem;
-    margin-bottom: 0.7rem;
-    font-weight: 700;
-  }
-  section.pricing p {
-    font-size: 1.1rem;
-    margin-bottom: 1.3rem;
-  }
-  section.pricing button {
-    background: #00b874;
-    border: none;
-    padding: 0.85rem 2rem;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 3px 10px rgba(0,184,116,0.7);
-    transition: background-color 0.3s ease;
-  }
-  section.pricing button:hover {
-    background: #009f63;
-  }
-  section.testimonials {
-    max-width: 800px;
-    margin: 3rem auto 2rem;
-    padding: 0 1rem;
-  }
-  section.testimonials h2 {
-    text-align: center;
-    font-weight: 700;
-    color: #007f5f;
-    margin-bottom: 1rem;
-  }
-  .testimonial-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.8rem;
-    justify-content: center;
-  }
-  .testimonial {
-    background: white;
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 260px;
-    font-style: italic;
-    color: #333;
-  }
-  .testimonial strong {
-    display: block;
-    margin-top: 0.8rem;
-    text-align: right;
-    font-weight: 700;
-    color: #004733;
-  }
-  footer {
-    background-color: #004733;
-    color: #ddd;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.7px;
-  }
-  /* Responsive */
-  @media (max-width: 600px) {
-    .icon-section {
-      flex-direction: column;
-      align-items: center;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alberta Sole Proprietorship Kit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* light blue background */
     }
-    .icon-box {
-      width: 100%;
-      max-width: 320px;
+
+    header {
+      background-color: #003366; /* deep blue */
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-    .testimonial-list {
-      flex-direction: column;
-      align-items: center;
+
+    h1 {
+      margin: 0;
     }
+
+    .back-button {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .back-button a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back-button a:hover {
+      text-decoration: underline;
+    }
+
+    .kit-info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 40px 20px;
+    }
+
+    .kit-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .kit-box img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .kit-box h2 {
+      margin-top: 15px;
+      color: #003366;
+    }
+
+    .kit-box p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .price-section {
+      background-color: #e6f2ff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .price-section h2 {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    .price {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #007BFF;
+    }
+
+    .price-section p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .buy-button {
+      background-color: #28a745;
+      color: white;
+      font-size: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .testimonial-section {
+      padding: 40px 20px;
+      background-color: #fdfdfd;
+      text-align: center;
+    }
+
+    .testimonial-section h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
     .testimonial {
-      width: 90%;
+      max-width: 700px;
+      margin: 20px auto;
+      font-style: italic;
+      color: #333;
     }
-  }
-</style>
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Alberta Sole Proprietorship Kit</h1>
+  </header>
 
-<header>
-  <h1>Alberta Startup Kit — Sole Proprietorship</h1>
-  <p>Everything you need to start your Alberta sole proprietorship with confidence</p>
-</header>
-
-<main>
-  <section class="icon-section" aria-label="Key features">
-    <div class="icon-box" role="article" aria-labelledby="icon-register">
-      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4C18.745 4 8 14.745 8 28c0 10.493 8.507 19 19 19 11.046 0 20-8.954 20-20 0-13.255-10.745-24-24-24zm0 34a14 14 0 1 1 0-28 14 14 0 0 1 0 28z"/></svg>
-      <h3 id="icon-register">Business Registration</h3>
-      <p>Step-by-step guidance to register your sole proprietorship with Alberta registries.</p>
-    </div>
-    <div class="icon-box" role="article" aria-labelledby="icon-licensing">
-      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M46 20H18c-2.209 0-4 1.791-4 4v16c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V24c0-2.209-1.791-4-4-4zm-1 13H19v-2h26v2zm0-5H19v-2h26v2z"/></svg>
-      <h3 id="icon-licensing">Required Permits & Licenses</h3>
-      <p>Information on permits you need depending on your business type and location.</p>
-    </div>
-    <div class="icon-box" role="article" aria-labelledby="icon-docs">
-      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M46 6H18c-2.209 0-4 1.791-4 4v44c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V10c0-2.209-1.791-4-4-4zm-7 38H25v-4h14v4zm0-8H25v-4h14v4zm0-8H25v-4h14v4z"/></svg>
-      <h3 id="icon-docs">Legal Documents</h3>
-      <p>Templates for contracts, invoices, and other essential sole proprietorship documents.</p>
-    </div>
-  </section>
-
-  <section class="description" aria-labelledby="desc-title">
-    <h2 id="desc-title">About This Kit</h2>
-    <p>
-      Our Alberta Sole Proprietorship Startup Kit provides a comprehensive package for entrepreneurs ready to start their business journey. 
-      Whether you are registering your trade name, understanding provincial permits, or need essential legal documents, this kit covers it all. 
-      Simplify the process and avoid costly mistakes with our professionally curated materials, tailored specifically to Alberta laws and regulations.
-    </p>
-  </section>
-
-  <section class="pricing" aria-label="Pricing and purchase">
-    <h2>Price: $49 CAD</h2>
-    <p>Instant access to download will be granted after purchase.</p>
-    <button onclick="window.location.href='https://yourcheckoutlink.com/alberta-sole'">Buy Now</button>
-  </section>
-</main>
-
-<section class="testimonials" aria-label="Customer testimonials">
-  <h2>What Alberta Entrepreneurs Say</h2>
-  <div class="testimonial-list">
-    <blockquote class="testimonial">
-      "The Alberta sole proprietorship kit made registering my business a breeze. Clear, practical, and all in one place!"<br />
-      <strong>— Sarah, Calgary</strong>
-    </blockquote>
-    <blockquote class="testimonial">
-      "Highly recommend! The legal templates saved me time and gave me peace of mind starting out in Edmonton."<br />
-      <strong>— Mark, Edmonton</strong>
-    </blockquote>
-    <blockquote class="testimonial">
-      "Great value for money, especially for someone new to business like me in Red Deer."<br />
-      <strong>— Olivia, Red Deer</strong>
-    </blockquote>
+  <div class="back-button">
+    <a href="startup-kit-alberta.html">&larr; Back to Alberta Startup Kits</a>
   </div>
-</section>
 
-<footer>
-  2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
-</footer>
+  <section class="kit-info">
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Registration Guide Icon">
+      <h2>Registration Guide</h2>
+      <p>Step-by-step instructions on how to register your sole proprietorship in Alberta.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Legal Templates Icon">
+      <h2>Legal Templates</h2>
+      <p>Ready-to-use templates including service agreements, NDAs, and more.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Checklist Icon">
+      <h2>Compliance Checklist</h2>
+      <p>Ensure you're meeting all federal and provincial requirements for your business.</p>
+    </div>
+  </section>
 
-<!-- Tidio Chatbot -->
-<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+  <section class="price-section">
+    <h2>Get the Full Kit Now</h2>
+    <div class="price">$49 CAD</div>
+    <p>Instant access to download will be granted after purchase.</p>
+    <button class="buy-button">Buy Now</button>
+  </section>
 
+  <section class="testimonial-section">
+    <h2>What Users Are Saying</h2>
+    <div class="testimonial">“Super useful and easy to follow. I registered my sole proprietorship in just a day!” — Emily R., Calgary</div>
+    <div class="testimonial">“The templates saved me hours of work and the compliance checklist kept me on track.” — James T., Edmonton</div>
+    <div class="testimonial">“Exactly what I needed to get started. Highly recommend for new entrepreneurs.” — Sarah L., Red Deer</div>
+  </section>
+
+  <footer>
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
+  </footer>
+
+  <!-- Tidio Chatbot -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
