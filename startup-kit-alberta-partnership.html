@@ -2,119 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alberta Partnership Kit | BizKitVault</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alberta Partnership Kit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* light blue background */
     }
+
     header {
-      background-color: #0066cc;
+      background-color: #003366; /* deep blue */
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 2rem 1rem;
     }
-    header h1 {
+
+    h1 {
       margin: 0;
-      font-size: 2rem;
     }
-    .content {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .content h2 {
-      color: #0066cc;
-    }
-    .content p {
-      line-height: 1.6;
-    }
-    .features {
-      display: grid;
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    .feature-box {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .pricing {
+
+    .back-button {
+      margin: 20px;
       text-align: center;
-      margin: 3rem 0;
     }
-    .price {
-      font-size: 2rem;
+
+    .back-button a {
+      color: #003366;
+      text-decoration: none;
       font-weight: bold;
-      color: #0066cc;
+      font-size: 16px;
     }
+
+    .back-button a:hover {
+      text-decoration: underline;
+    }
+
+    .kit-info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 40px 20px;
+    }
+
+    .kit-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .kit-box img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .kit-box h2 {
+      margin-top: 15px;
+      color: #003366;
+    }
+
+    .kit-box p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .price-section {
+      background-color: #e6f2ff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .price-section h2 {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    .price {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #007BFF;
+    }
+
+    .price-section p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #333;
+    }
+
     .buy-button {
-      margin-top: 1rem;
-      padding: 0.8rem 2rem;
-      background-color: #0066cc;
+      background-color: #28a745;
       color: white;
+      font-size: 20px;
+      padding: 15px 30px;
       border: none;
-      border-radius: 8px;
-      font-size: 1rem;
+      border-radius: 10px;
       cursor: pointer;
     }
-    .buy-button:hover {
-      background-color: #004999;
-    }
-    footer {
+
+    .testimonial-section {
+      padding: 40px 20px;
+      background-color: #fdfdfd;
       text-align: center;
-      padding: 1.5rem;
-      color: #555;
-      font-size: 0.9rem;
+    }
+
+    .testimonial-section h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: 20px auto;
+      font-style: italic;
+      color: #333;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Alberta Partnership Kit</h1>
+  </header>
 
-<header>
-  <h1>Alberta Partnership Kit</h1>
-</header>
-
-<div class="content">
-  <h2>Launch Your Partnership the Right Way in Alberta</h2>
-  <p>This startup kit is tailored for those forming a general partnership in Alberta. It includes registration support, compliance documents, and essential business tools — all aligned with Alberta and federal requirements.</p>
-
-  <div class="features">
-    <div class="feature-box">
-      <h3>✔ Partnership Registration Guide</h3>
-      <p>Clear steps for registering your partnership with Alberta’s provincial registry system.</p>
-    </div>
-    <div class="feature-box">
-      <h3>✔ Legal Partnership Agreement Template</h3>
-      <p>A customizable agreement to protect each partner’s role, contribution, and liability.</p>
-    </div>
-    <div class="feature-box">
-      <h3>✔ Alberta Compliance Checklist</h3>
-      <p>Stay fully compliant with both Alberta Partnership Act and federal CRA expectations.</p>
-    </div>
-    <div class="feature-box">
-      <h3>✔ Essential Business Docs</h3>
-      <p>Editable contracts, tax forms, invoice templates, and more — ready for immediate use.</p>
-    </div>
+  <div class="back-button">
+    <a href="startup-kit-alberta.html">&larr; Back to Alberta Startup Kits</a>
   </div>
 
-  <div class="pricing">
-    <p class="price">$49 CAD</p>
-    <button class="buy-button">Add to Cart</button>
-  </div>
-</div>
+  <section class="kit-info">
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Registration Guide Icon">
+      <h2>Registration Guide</h2>
+      <p>Step-by-step instructions on how to register your partnership in Alberta.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Legal Templates Icon">
+      <h2>Legal Templates</h2>
+      <p>Ready-to-use templates including partnership agreements, NDAs, and more.</p>
+    </div>
+    <div class="kit-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Compliance Checklist Icon">
+      <h2>Compliance Checklist</h2>
+      <p>Ensure you're meeting all federal and provincial requirements for your business.</p>
+    </div>
+  </section>
 
-<footer>
-  &copy; 2025 BizKitVault.ca – All rights reserved.
-</footer>
+  <section class="price-section">
+    <h2>Get the Full Kit Now</h2>
+    <div class="price">$59 CAD</div>
+    <p>Instant access to download will be granted after purchase.</p>
+    <button class="buy-button">Buy Now</button>
+  </section>
 
-<!-- Tidio Chatbot -->
-<script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
+  <section class="testimonial-section">
+    <h2>What Users Are Saying</h2>
+    <div class="testimonial">“Helpful and detailed. This kit made setting up our partnership a breeze.” — Michael B., Calgary</div>
+    <div class="testimonial">“Clear templates and checklists kept us organized from day one.” — Laura S., Edmonton</div>
+    <div class="testimonial">“Highly recommend for anyone starting a partnership in Alberta.” — Daniel M., Lethbridge</div>
+  </section>
 
+  <footer>
+    2025 BizKitVault - Empowering Canadian Entrepreneurs - All Rights Reserved.
+  </footer>
+
+  <!-- Tidio Chatbot -->
+  <script src="//code.tidio.co/yg6wxiugmlw91m3vjqpqfi7sqzse1tdg.js" async></script>
 </body>
 </html>
